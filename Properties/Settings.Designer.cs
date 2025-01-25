@@ -23,12 +23,15 @@ namespace Treasure_Hunt_Logs.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SavedHuntsPath {
+        public string FolderPath {
             get {
-                return ((string)(this["SavedHuntsPath"]));
+                return ((string)(this["FolderPath"]));
+            }
+            set {
+                this["FolderPath"] = value;
             }
         }
     }

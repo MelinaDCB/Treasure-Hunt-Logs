@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Windows.Forms;
 
 namespace Treasure_Hunt_Logs
 {
@@ -9,13 +10,10 @@ namespace Treasure_Hunt_Logs
         {
             InitializeComponent();
         }
-
-        //[100, [2, 4, "Deer Skull"], [2, 13, "Bloody Handprint"], [4, 13, "Skull in a Hole"], [5, 13, "Sneaky Drheller"], [5, 22, "Striped Mushroom"],
-        //[6, 22, "Smiley Flowers"], [7, 22, "Planted Pickaxe"], [8, 22, "Folded Paper Star"], [9, 22, "Folded Paper Star"], [10, 22, "Black and White Wheat"],
-        //[11, 22, "Studded Belt"], [14, 22, ""]]
+        
         int HuntLevel = 0;
         string cluePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "clues_full.json");
-        string SavePath = Properties.Settings.Default.SavedHuntsPath;
+        string SavePath = string.Empty;
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
         CluesList cl = new CluesList();
         List<THStep> ListSteps = new List<THStep>();
@@ -118,6 +116,8 @@ namespace Treasure_Hunt_Logs
             comboBox_HuntLevel.SelectedIndex = 5;
             comboBox_Language.Text = "";
             comboBox_Clues.Text = "";
+            hunt = new Hunt(HuntLevel, ListSteps);
+            hunt.HuntLevel = HuntLevel;
         }
 
         private void ClueComboBoxLoad()
@@ -129,13 +129,18 @@ namespace Treasure_Hunt_Logs
             }
         }
 
-        private async void button_NewHunt_Click(object sender, EventArgs e)
+        private async void button_AddLastHint_Click(object sender, EventArgs e)
         {
-            label_Result.Text = "New Hunt created !";
-            hunt = new Hunt(HuntLevel, ListSteps);
-            hunt.HuntLevel = HuntLevel;
-            await Task.Delay(500);
-            label_Result.Text = "";
+            if (comboBox_HuntLevel.Text != null && comboBox_Language.Text != null &&
+            textBox_XCoordinate.Text != "" && textBox_YCoordinate.Text != "" &&
+            comboBox_Clues.Text == "")
+            {
+                hunt.Steps.Add(AddStep(x, y, ""));
+                label_Result.Text = "Last Clue added successfuly.";
+                CleanTextboxes();
+                await Task.Delay(1000);
+                label_Result.Text = "";
+            }
         }
 
         private void button_DisplayCurrentHuntClick(object sender, EventArgs e)
@@ -169,36 +174,44 @@ namespace Treasure_Hunt_Logs
             }
         }
 
-            
-
         private void button_SaveHunt_Click(object sender, EventArgs e)
         {
-            if (SavePath == "")
+            if (!File.Exists(Path.Combine(Properties.Settings.Default.FolderPath, $"HuntLogs.json")))
             {
                 FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
-                    SavePath = folderBrowserDialog.SelectedPath;
+                    Properties.Settings.Default.FolderPath = folderBrowserDialog.SelectedPath;
+                    Properties.Settings.Default.Save();
+                    SavePath = Path.Combine(folderBrowserDialog.SelectedPath, $"HuntLogs.json");
+                    using (FileStream fs = File.Create(SavePath))
+                    {
+                    }
                 }
-
-                //OpenFileDialog openFileDialog = new OpenFileDialog();
-                //openFileDialog.Filter = "json files (*.json)";
-                //openFileDialog.RestoreDirectory = true;
-                //openFileDialog.Title = "Please Select the JSON File you want to save the data to :"
-                //if (openFileDialog.ShowDialog() == DialogResult.OK)
-                //{
-                //    SavePath = openFileDialog.FileName;
-                //}
+                CreateHunt(hunt);
             }
             else
             {
+                SavePath = Path.Combine(Properties.Settings.Default.FolderPath, $"HuntLogs.json");
                 CreateHunt(hunt);
             }
         }
 
         private void CreateHunt(Hunt hunt)
         {
+            List<string> thslist = new List<string>();
+            //[100, [2, 4, "Deer Skull"], [2, 13, "Bloody Handprint"], [4, 13, "Skull in a Hole"], [5, 13, "Sneaky Drheller"], [5, 22, "Striped Mushroom"],
+            //[6, 22, "Smiley Flowers"], [7, 22, "Planted Pickaxe"], [8, 22, "Folded Paper Star"], [9, 22, "Folded Paper Star"], [10, 22, "Black and White Wheat"],
+            //[11, 22, "Studded Belt"], [14, 22, ""]]
 
+            foreach (THStep ths in hunt.Steps)
+            {
+                string data = $"[{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"]";
+                thslist.Add(data);
+            }
+            string HuntToSave = $"[{hunt.HuntLevel}, {string.Join(", ", thslist)}],\n";
+            File.AppendAllText(SavePath, HuntToSave);
+            hunt.Steps.Clear();
         }
 
         private void textBox_XCoordinate_Leave(object sender, EventArgs e)
@@ -244,8 +257,8 @@ namespace Treasure_Hunt_Logs
                 {
                     hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
                     label_Result.Text = "Clue added successfuly.";
-                    CleanTextboxes();
                     await Task.Delay(1000);
+                    CleanTextboxes();
                     label_Result.Text = "";
 
                 }
@@ -258,8 +271,8 @@ namespace Treasure_Hunt_Logs
                         hunt.HuntLevel = HuntLevel;
                         hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
                         label_Result.Text = "Clue added successfuly.";
-                        CleanTextboxes();
                         await Task.Delay(1000);
+                        CleanTextboxes();
                         label_Result.Text = "";
                     }
                 }

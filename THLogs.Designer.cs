@@ -39,7 +39,7 @@
             comboBox_Clues = new ComboBox();
             groupBox_Clue = new GroupBox();
             label_Result = new Label();
-            button_NewHunt = new Button();
+            button_AddLastHint = new Button();
             button_DisplayCurrentHunt = new Button();
             button_EraseLastStep = new Button();
             button_SaveHunt = new Button();
@@ -155,15 +155,15 @@
             label_Result.Size = new Size(0, 15);
             label_Result.TabIndex = 12;
             // 
-            // button_NewHunt
+            // button_AddLastHint
             // 
-            button_NewHunt.Location = new Point(15, 242);
-            button_NewHunt.Name = "button_NewHunt";
-            button_NewHunt.Size = new Size(90, 40);
-            button_NewHunt.TabIndex = 8;
-            button_NewHunt.Text = "New Hunt";
-            button_NewHunt.UseVisualStyleBackColor = true;
-            button_NewHunt.Click += button_NewHunt_Click;
+            button_AddLastHint.Location = new Point(15, 242);
+            button_AddLastHint.Name = "button_AddLastHint";
+            button_AddLastHint.Size = new Size(90, 40);
+            button_AddLastHint.TabIndex = 8;
+            button_AddLastHint.Text = "Add Last Hint";
+            button_AddLastHint.UseVisualStyleBackColor = true;
+            button_AddLastHint.Click += button_AddLastHint_Click;
             // 
             // button_DisplayCurrentHunt
             // 
@@ -203,7 +203,7 @@
             Controls.Add(button_SaveHunt);
             Controls.Add(button_EraseLastStep);
             Controls.Add(button_DisplayCurrentHunt);
-            Controls.Add(button_NewHunt);
+            Controls.Add(button_AddLastHint);
             Controls.Add(groupBox_Clue);
             Controls.Add(groupBox_Coordinates);
             Controls.Add(comboBox_Language);
@@ -237,7 +237,7 @@
         private TextBox textBox_XCoordinate;
         private ComboBox comboBox_Clues;
         private GroupBox groupBox_Clue;
-        private Button button_NewHunt;
+        private Button button_AddLastHint;
         private Button button_DisplayCurrentHunt;
         private Button button_EraseLastStep;
         private Button button_SaveHunt;
