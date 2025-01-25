@@ -127,13 +127,15 @@ namespace Treasure_Hunt_Logs
                 var json = sr.ReadToEnd();
                 cl = JsonSerializer.Deserialize<CluesList>(json);
             }
-
         }
 
-        private void button_NewHunt_Click(object sender, EventArgs e)
+        private async void button_NewHunt_Click(object sender, EventArgs e)
         {
+            label_Result.Text = "New Hunt created !";
             hunt = new Hunt(HuntLevel, ListSteps);
             hunt.HuntLevel = HuntLevel;
+            await Task.Delay(500);
+            label_Result.Text = "";
         }
 
         private void button_DisplayCurrentHuntClick(object sender, EventArgs e)
@@ -150,8 +152,24 @@ namespace Treasure_Hunt_Logs
 
         private void button_RedoHunt_Click(object sender, EventArgs e)
         {
-            //Messagebox to show the last step and make sure they want it erased
+            int stepcount = hunt.Steps.Count;
+            if (stepcount > 0)
+            {
+                string laststep = $"{hunt.Steps[stepcount - 1].X_Coordinate.ToString()}, {hunt.Steps[stepcount - 1].Y_Coordinate.ToString()}, \"{hunt.Steps[stepcount - 1].StepClue}\"";
+                string mbtext = $"Are you sure you want to delete the last step ? {laststep}";
+                DialogResult dr = MessageBox.Show(mbtext, "Confirmation", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    hunt.Steps.RemoveAt(stepcount - 1);
+                }
+            }
+            else
+            {
+                MessageBox.Show("You don't have any step to erase !");
+            }
         }
+
+            
 
         private void button_SaveHunt_Click(object sender, EventArgs e)
         {
@@ -215,7 +233,7 @@ namespace Treasure_Hunt_Logs
             }
         }
 
-        private void comboBox_Clues_SelectedIndexChanged(object sender, EventArgs e)
+        private async void comboBox_Clues_SelectedIndexChanged(object sender, EventArgs e)
         {
 
             if (comboBox_HuntLevel.Text != null && comboBox_Language.Text != null &&
@@ -227,7 +245,7 @@ namespace Treasure_Hunt_Logs
                     hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
                     label_Result.Text = "Clue added successfuly.";
                     CleanTextboxes();
-                    Thread.Sleep(1000);
+                    await Task.Delay(1000);
                     label_Result.Text = "";
 
                 }
@@ -241,7 +259,7 @@ namespace Treasure_Hunt_Logs
                         hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
                         label_Result.Text = "Clue added successfuly.";
                         CleanTextboxes();
-                        Thread.Sleep(1000);
+                        await Task.Delay(1000);
                         label_Result.Text = "";
                     }
                 }
