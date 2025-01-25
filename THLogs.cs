@@ -1,3 +1,6 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace Treasure_Hunt_Logs
 {
     public partial class THLogs : Form
@@ -11,6 +14,7 @@ namespace Treasure_Hunt_Logs
         //[6, 22, "Smiley Flowers"], [7, 22, "Planted Pickaxe"], [8, 22, "Folded Paper Star"], [9, 22, "Folded Paper Star"], [10, 22, "Black and White Wheat"],
         //[11, 22, "Studded Belt"], [14, 22, ""]]
         int HuntLevel = 0;
+        string cluePath = "C:\\Users\\melin\\OneDrive\\Documents\\Projets\\Treasure Hunt Logs\\clues_full.json";
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
 
 
@@ -30,6 +34,30 @@ namespace Treasure_Hunt_Logs
 
         }
 
+        public class Clue
+        {
+            [JsonPropertyName("clue-id")]
+            public int ClueID { get; set; }
+            [JsonPropertyName("name-fr")]
+            public string FrenchText { get; set; }
+            [JsonPropertyName("name-en")]
+            public string EnglishText { get; set; }
+            [JsonPropertyName("name-es")]
+            public string SpanishText { get; set; }
+            [JsonPropertyName("name-de")]
+            public string GermanText { get; set; }
+            [JsonPropertyName("name-pt")]
+            public string PortugueseText { get; set; }
+
+        }
+
+        public class CluesList
+        {
+            [JsonPropertyName("clues")]
+            public List<Clue> Clues { get; set; }
+        }
+
+
         private void comboBox_Language_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -46,6 +74,17 @@ namespace Treasure_Hunt_Logs
             comboBox_Language.Items.AddRange(Languages.ToArray());
             comboBox_Language.SelectedIndex = 1;
             comboBox_HuntLevel.SelectedIndex = 5;
+            ClueComboBoxLoad();
+        }
+
+        private void ClueComboBoxLoad()
+        {
+            using (var sr = new StreamReader(cluePath))
+            {
+                var json = sr.ReadToEnd();
+                var cl = JsonSerializer.Deserialize<CluesList>(json);
+
+            }
         }
 
     }

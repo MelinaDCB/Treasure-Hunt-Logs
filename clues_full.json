@@ -1,0 +1,1436 @@
+{
+  "clues": [
+    {
+      "clue-id": 848,
+      "name-fr": "Affiche de carte au tr\u00E9sor",
+      "name-en": "Treasure Map Poster",
+      "name-es": "Afiche de mapa del tesoro",
+      "name-de": "Schatzkarten-Anzeige",
+      "name-pt": "Cartaz de Mapa do Tesouro"
+    },
+    {
+      "clue-id": 849,
+      "name-fr": "Aiguille \u00E0 coudre",
+      "name-en": "Needle",
+      "name-es": "Aguja de coser",
+      "name-de": "N\u00E4hnadel",
+      "name-pt": "Agulha de Costura"
+    },
+    {
+      "clue-id": 850,
+      "name-fr": "Ancre dor\u00E9e",
+      "name-en": "Golden Anchor",
+      "name-es": "Ancla dorada",
+      "name-de": "Goldener Anker",
+      "name-pt": "\u00C2ncora Dourada"
+    },
+    {
+      "clue-id": 851,
+      "name-fr": "Anneau d\u0027or",
+      "name-en": "Gold Ring",
+      "name-es": "Anillo de oro",
+      "name-de": "Goldring",
+      "name-pt": "Anel de Ouro"
+    },
+    {
+      "clue-id": 852,
+      "name-fr": "Arbre \u00E0 \u00E9pines",
+      "name-en": "Prickly Tree",
+      "name-es": "\u00C1rbol con espinas",
+      "name-de": "Nadelbaum",
+      "name-pt": "\u00C1rvore Espinhosa"
+    },
+    {
+      "clue-id": 853,
+      "name-fr": "Arbre arc-en-ciel",
+      "name-en": "Rainbow Tree",
+      "name-es": "\u00C1rbol arco\u00EDris",
+      "name-de": "Regenbogenbaum",
+      "name-pt": "\u00C1rvore Arco-\u00CDris"
+    },
+    {
+      "clue-id": 854,
+      "name-fr": "Arbre ensanglant\u00E9",
+      "name-en": "Bloody Tree",
+      "name-es": "\u00C1rbol ensangrentado",
+      "name-de": "Blutbefleckter Baum",
+      "name-pt": "\u00C1rvore Ensanguentada"
+    },
+    {
+      "clue-id": 855,
+      "name-fr": "Arbre glac\u00E9",
+      "name-en": "Frozen Tree",
+      "name-es": "\u00C1rbol helado",
+      "name-de": "Vereister Baum",
+      "name-pt": "\u00C1rvore Gelada"
+    },
+    {
+      "clue-id": 856,
+      "name-fr": "Arbre \u00E0 moiti\u00E9 coup\u00E9",
+      "name-en": "Half-Felled Tree",
+      "name-es": "\u00C1rbol medio cortado",
+      "name-de": "Halb gef\u00E4llter Baum",
+      "name-pt": "\u00C1rvore Meio Cortada"
+    },
+    {
+      "clue-id": 857,
+      "name-fr": "Arbre \u00E0 trous",
+      "name-en": "Holey Tree",
+      "name-es": "\u00C1rbol agujereado",
+      "name-de": "Baum mit L\u00F6chern",
+      "name-pt": "\u00C1rvore Esburacada"
+    },
+    {
+      "clue-id": 858,
+      "name-fr": "Arche naturelle",
+      "name-en": "Natural Arch",
+      "name-es": "Arco natural",
+      "name-de": "Felsenbogen",
+      "name-pt": "Arco Natural"
+    },
+    {
+      "clue-id": 859,
+      "name-fr": "Balan\u00E7oire macabre",
+      "name-en": "Macabre Swing",
+      "name-es": "Columpio macabro",
+      "name-de": "Makabre Schaukel",
+      "name-pt": "Balan\u00E7o Macabro"
+    },
+    {
+      "clue-id": 860,
+      "name-fr": "Ballons en forme de coeur",
+      "name-en": "Heart Balloons",
+      "name-es": "Globos con forma de coraz\u00F3n",
+      "name-de": "Herzballons",
+      "name-pt": "Bal\u00F5es em Forma de Cora\u00E7\u00E3o"
+    },
+    {
+      "clue-id": 861,
+      "name-fr": "Banni\u00E8re bontarienne d\u00E9chir\u00E9e",
+      "name-en": "Torn Bontarian Banner",
+      "name-es": "Banda bontariana rasgada",
+      "name-de": "Zerrissenes Bonta-Banner",
+      "name-pt": "Estandarte Bontariano Rasgado"
+    },
+    {
+      "clue-id": 862,
+      "name-fr": "Banni\u00E8re br\u00E2kmarienne d\u00E9chir\u00E9e",
+      "name-en": "Torn Brakmarian Banner",
+      "name-es": "Banda brakmariana rasgada",
+      "name-de": "Zerrissenes Br\u00E2k-Banner",
+      "name-pt": "Estandarte Brakmariano Rasgado"
+    },
+    {
+      "clue-id": 863,
+      "name-fr": "Barque coul\u00E9e",
+      "name-en": "Sunken Boat",
+      "name-es": "Barca zozobrada",
+      "name-de": "Gesunkenes Boot",
+      "name-pt": "Embarca\u00E7\u00E3o Encalhada"
+    },
+    {
+      "clue-id": 864,
+      "name-fr": "Bl\u00E9 noir et blanc",
+      "name-en": "Black and White Wheat",
+      "name-es": "Trigo blanco y negro",
+      "name-de": "Schwarz-wei\u00DFer Weizen",
+      "name-pt": "Trigo Preto e Branco"
+    },
+    {
+      "clue-id": 865,
+      "name-fr": "Bombe coeur",
+      "name-en": "Heart Bomb",
+      "name-es": "Bomba coraz\u00F3n",
+      "name-de": "Herzbombe",
+      "name-pt": "Bomba Cora\u00E7\u00E3o"
+    },
+    {
+      "clue-id": 866,
+      "name-fr": "Bonbon bleu",
+      "name-en": "Blue Sweet",
+      "name-es": "Caramelo azul",
+      "name-de": "Blaues Bonbon",
+      "name-pt": "Doce Azul"
+    },
+    {
+      "clue-id": 867,
+      "name-fr": "Bonhomme de neige fondu",
+      "name-en": "Melted Snowman",
+      "name-es": "Mu\u00F1eco de nieve fundido",
+      "name-de": "Geschmolzener Schneegentelmann",
+      "name-pt": "Boneco de Neve Derretido"
+    },
+    {
+      "clue-id": 868,
+      "name-fr": "Bougie dans un trou",
+      "name-en": "Candle in a Hole",
+      "name-es": "Vela en un agujero",
+      "name-de": "Kerze in einem Loch",
+      "name-pt": "Vela num Buraco"
+    },
+    {
+      "clue-id": 869,
+      "name-fr": "Boule dor\u00E9e de marin",
+      "name-en": "Gold Sailor Ball",
+      "name-es": "Bola dorada de marinero",
+      "name-de": "Goldene Fischerkugel",
+      "name-pt": "Bola Dourada de Marinheiro"
+    },
+    {
+      "clue-id": 870,
+      "name-fr": "Bouton de couture",
+      "name-en": "Button",
+      "name-es": "Bot\u00F3n de costura",
+      "name-de": "N\u00E4hknopf",
+      "name-pt": "Bot\u00E3o"
+    },
+    {
+      "clue-id": 871,
+      "name-fr": "Buisson poup\u00E9e sadida",
+      "name-en": "Sadida Doll Bush",
+      "name-es": "Arbusto mu\u00F1ecas sadida",
+      "name-de": "Sadida-Puppenstrauch",
+      "name-pt": "Arbusto Boneca Sadida"
+    },
+    {
+      "clue-id": 872,
+      "name-fr": "Cactus sans \u00E9pines",
+      "name-en": "Spineless Cactus",
+      "name-es": "Cactus sin espinas",
+      "name-de": "Dornenloser Kaktus",
+      "name-pt": "Cacto sem Espinhos"
+    },
+    {
+      "clue-id": 873,
+      "name-fr": "Cactus \u00E0 fleur bleue",
+      "name-en": "Blue-Flowered Cactus",
+      "name-es": "Cactus con flor azul",
+      "name-de": "Kaktus mit blauen Bl\u00FCten",
+      "name-pt": "Cacto com Flor Azul"
+    },
+    {
+      "clue-id": 874,
+      "name-fr": "Cadran solaire",
+      "name-en": "Sundial",
+      "name-es": "Esfera solar",
+      "name-de": "Sonnenuhr-Ziffernblatt",
+      "name-pt": "Rel\u00F3gio de Sol"
+    },
+    {
+      "clue-id": 875,
+      "name-fr": "Cairn",
+      "name-en": "Cairn",
+      "name-es": "Cairn",
+      "name-de": "Steinh\u00FCgel",
+      "name-pt": "Cairn"
+    },
+    {
+      "clue-id": 876,
+      "name-fr": "Canard en plastique",
+      "name-en": "Rubber Duck",
+      "name-es": "Patito de pl\u00E1stico",
+      "name-de": "Quietscheentchen",
+      "name-pt": "Pato de Borracha"
+    },
+    {
+      "clue-id": 877,
+      "name-fr": "Canne \u00E0 kebab",
+      "name-en": "Kebab Pole",
+      "name-es": "Ca\u00F1a para kebab",
+      "name-de": "Kebab-Stange",
+      "name-pt": "Vara com Kebab"
+    },
+    {
+      "clue-id": 878,
+      "name-fr": "Carapace de tortue",
+      "name-en": "Tortoise Shell",
+      "name-es": "Caparaz\u00F3n de tortuga",
+      "name-de": "Schildkr\u00F6tenpanzer",
+      "name-pt": "Carapa\u00E7a de Tartaruga"
+    },
+    {
+      "clue-id": 879,
+      "name-fr": "Casque \u00E0 cornes",
+      "name-en": "Horned Helmet",
+      "name-es": "Casco con cuernos",
+      "name-de": "Helm mit H\u00F6rnern",
+      "name-pt": "Elmo com Chifres"
+    },
+    {
+      "clue-id": 880,
+      "name-fr": "Ceinture clout\u00E9e",
+      "name-en": "Studded Belt",
+      "name-es": "Cintur\u00F3n claveteado",
+      "name-de": "Nieteng\u00FCrtel",
+      "name-pt": "Cinto com Rebites"
+    },
+    {
+      "clue-id": 881,
+      "name-fr": "Cerf-volant shinkansen",
+      "name-en": "Shinkansen Kite",
+      "name-es": "Cometa shinkansen",
+      "name-de": "Shinkansen-Flugdrache",
+      "name-pt": "Pipa de Shinkansen"
+    },
+    {
+      "clue-id": 882,
+      "name-fr": "Champignon ray\u00E9",
+      "name-en": "Striped Mushroom",
+      "name-es": "Champi\u00F1\u00F3n rayado",
+      "name-de": "Gestreifter Pilz",
+      "name-pt": "Cogumelo Listrado"
+    },
+    {
+      "clue-id": 883,
+      "name-fr": "Chapeau d\u00E9",
+      "name-en": "Dice Hat",
+      "name-es": "Sombrero dado",
+      "name-de": "W\u00FCrfelhut",
+      "name-pt": "Chap\u00E9u Dado"
+    },
+    {
+      "clue-id": 884,
+      "name-fr": "Chaussette \u00E0 pois",
+      "name-en": "Spotted Sock",
+      "name-es": "Calcet\u00EDn con lunares",
+      "name-de": "Erbsensocke",
+      "name-pt": "Meia de Bolinha"
+    },
+    {
+      "clue-id": 885,
+      "name-fr": "Clef dor\u00E9e",
+      "name-en": "Golden Key",
+      "name-es": "Llave dorada",
+      "name-de": "Goldener Schl\u00FCssel",
+      "name-pt": "Chave Dourada"
+    },
+    {
+      "clue-id": 886,
+      "name-fr": "Cocotte origami",
+      "name-en": "Origami Hen",
+      "name-es": "Pajarita origami",
+      "name-de": "Origami-Vogel",
+      "name-pt": "Galinha de Origami"
+    },
+    {
+      "clue-id": 887,
+      "name-fr": "Coeur dans un n\u00E9nuphar",
+      "name-en": "Heart in a Waterlily",
+      "name-es": "Coraz\u00F3n en un nen\u00FAfar",
+      "name-de": "Herz in einer Seerose",
+      "name-pt": "Cora\u00E7\u00E3o num Nen\u00FAfar"
+    },
+    {
+      "clue-id": 888,
+      "name-fr": "Coquillage \u00E0 pois",
+      "name-en": "Spotted Shell",
+      "name-es": "Valva con lunares",
+      "name-de": "Erbsenmuschel",
+      "name-pt": "Concha de Bolinha"
+    },
+    {
+      "clue-id": 889,
+      "name-fr": "Corail avec des dents",
+      "name-en": "Coral with Teeth",
+      "name-es": "Coral con dientes",
+      "name-de": "Koralle mit Z\u00E4hnen",
+      "name-pt": "Coral com Dentes"
+    },
+    {
+      "clue-id": 890,
+      "name-fr": "Corail fl\u00FBtiste",
+      "name-en": "Flute Coral",
+      "name-es": "Coral flautista",
+      "name-de": "Fl\u00F6tenspieler-Koralle",
+      "name-pt": "Coral Flautista"
+    },
+    {
+      "clue-id": 891,
+      "name-fr": "Corne de likrone",
+      "name-en": "Unikron Horn",
+      "name-es": "Cuerno de urikornio",
+      "name-de": "Einohr-Horn",
+      "name-pt": "Chifre de Unikr\u00F4nio"
+    },
+    {
+      "clue-id": 892,
+      "name-fr": "Cr\u00E2 cram\u00E9",
+      "name-en": "Charred Cra",
+      "name-es": "Ocra carbonizado",
+      "name-de": "Angebrannter Cr\u00E2",
+      "name-pt": "Cra Queimado"
+    },
+    {
+      "clue-id": 893,
+      "name-fr": "Cr\u00E2ne dans un trou",
+      "name-en": "Skull in a Hole",
+      "name-es": "Cr\u00E1neo en un agujero",
+      "name-de": "Sch\u00E4del in einem Loch",
+      "name-pt": "Caveira num Buraco"
+    },
+    {
+      "clue-id": 894,
+      "name-fr": "Cr\u00E2ne de Cr\u00E2",
+      "name-en": "Cra Skull",
+      "name-es": "Cr\u00E1neo de ocra",
+      "name-de": "Cr\u00E2-Sch\u00E4del",
+      "name-pt": "Cr\u00E2nio de Cra"
+    },
+    {
+      "clue-id": 895,
+      "name-fr": "Cr\u00E2ne de cristal",
+      "name-en": "Crystal Skull",
+      "name-es": "Cr\u00E1neo de cristal",
+      "name-de": "Kristall-Sch\u00E4del",
+      "name-pt": "Caveira de Cristal"
+    },
+    {
+      "clue-id": 896,
+      "name-fr": "Cr\u00E2ne de likrone",
+      "name-en": "Unikron Skull",
+      "name-es": "Cr\u00E1neo de urikornio",
+      "name-de": "Einohr-Sch\u00E4del",
+      "name-pt": "Caveira de Unikr\u00F4nio"
+    },
+    {
+      "clue-id": 897,
+      "name-fr": "Cr\u00E2ne de likrone dans la glace",
+      "name-en": "Unikron Skull in Ice",
+      "name-es": "Cr\u00E1neo de urikornio en el hielo",
+      "name-de": "Einohr-Sch\u00E4del im Eis",
+      "name-pt": "Caveira de Unikr\u00F4nio no Gelo"
+    },
+    {
+      "clue-id": 898,
+      "name-fr": "Cr\u00E2ne de renne",
+      "name-en": "Deer Skull",
+      "name-es": "Cr\u00E1neo de reno",
+      "name-de": "Rentier-Sch\u00E4del",
+      "name-pt": "Caveira de Rena"
+    },
+    {
+      "clue-id": 899,
+      "name-fr": "Cr\u00E2ne de Roublard",
+      "name-en": "Rogue Skull",
+      "name-es": "Cr\u00E1neo de tymador",
+      "name-de": "Halsabschneider-Sch\u00E4del",
+      "name-pt": "Cr\u00E2nio de Ladino"
+    },
+    {
+      "clue-id": 900,
+      "name-fr": "Croix en pierre bris\u00E9e",
+      "name-en": "Broken Stone Cross",
+      "name-es": "Cruz de piedra rota",
+      "name-de": "Zerbrochenes Steinkreuz",
+      "name-pt": "Cruz de Pedra Quebrada"
+    },
+    {
+      "clue-id": 901,
+      "name-fr": "Dessin au pipi dans la neige",
+      "name-en": "Pee Drawing in the Snow",
+      "name-es": "Dibujo con pip\u00ED en la nieve",
+      "name-de": "Zeichnung mit Pipi im Schnee",
+      "name-pt": "Desenho de Xixi na Neve"
+    },
+    {
+      "clue-id": 902,
+      "name-fr": "Dessin de croix dans un cercle",
+      "name-en": "Drawing of an X in a Circle",
+      "name-es": "Dibujo de cruz en un c\u00EDrculo",
+      "name-de": "Zeichnung eines Kreuzes in einem Kreis",
+      "name-pt": "Desenho de Cruz num C\u00EDrculo"
+    },
+    {
+      "clue-id": 903,
+      "name-fr": "Dessin dragodinde",
+      "name-en": "Dragoturkey Drawing",
+      "name-es": "Dibujo de dragopavo",
+      "name-de": "Dracotruter-Zeichnung",
+      "name-pt": "Desenho de Dragoperu"
+    },
+    {
+      "clue-id": 904,
+      "name-fr": "Dessin koalak",
+      "name-en": "Koalak Drawing",
+      "name-es": "Dib de koalak",
+      "name-de": "Koalak-Zeichnung",
+      "name-pt": "Desenho de Koalak"
+    },
+    {
+      "clue-id": 905,
+      "name-fr": "Dofus en bois",
+      "name-en": "Wooden Dofus",
+      "name-es": "Dofus de madera",
+      "name-de": "Dofus aus Holz",
+      "name-pt": "Dofus de Madeira"
+    },
+    {
+      "clue-id": 906,
+      "name-fr": "Dolmen",
+      "name-en": "Dolmen",
+      "name-es": "Dolmen",
+      "name-de": "Dolmen",
+      "name-pt": "D\u00F3lmen"
+    },
+    {
+      "clue-id": 907,
+      "name-fr": "D\u00E9 en glace",
+      "name-en": "Ice Die",
+      "name-es": "Dado de hielo",
+      "name-de": "W\u00FCrfel aus Eis",
+      "name-pt": "Dado de Gelo"
+    },
+    {
+      "clue-id": 908,
+      "name-fr": "\u00C9chelle cass\u00E9e",
+      "name-en": "Broken Ladder",
+      "name-es": "Escalera rota",
+      "name-de": "Zerbrochene Leiter",
+      "name-pt": "Escada Quebrada"
+    },
+    {
+      "clue-id": 909,
+      "name-fr": "\u00C9olienne \u00E0 quatre pales",
+      "name-en": "Four-Bladed Windmill",
+      "name-es": "Aerogenerador de cuatro aspas",
+      "name-de": "Windrad mit vier Fl\u00FCgeln",
+      "name-pt": "Moinho de Quatro P\u00E1s"
+    },
+    {
+      "clue-id": 910,
+      "name-fr": "\u00C9pouvantail \u00E0 pipe",
+      "name-en": "Scarecrow with a Pipe",
+      "name-es": "Espantap\u00E1jaros con pipa",
+      "name-de": "Vogelscheuche mit Pfeife",
+      "name-pt": "Espantalho de Cachimbo"
+    },
+    {
+      "clue-id": 911,
+      "name-fr": "\u00C9p\u00E9e prise dans la glace",
+      "name-en": "Sword Caught in Ice",
+      "name-es": "Espada atrapada en el hielo",
+      "name-de": "Im Eis eingeschlossenes Schwert",
+      "name-pt": "Espada Presa no Gelo"
+    },
+    {
+      "clue-id": 912,
+      "name-fr": "\u00C9toile en papier pli\u00E9",
+      "name-en": "Folded Paper Star",
+      "name-es": "Estrella de papel plegado",
+      "name-de": "Stern aus gefaltetem Papier",
+      "name-pt": "Dobradura de Estrela"
+    },
+    {
+      "clue-id": 913,
+      "name-fr": "\u00C9toile jaune peinte",
+      "name-en": "Yellow Painted Star",
+      "name-es": "Estrella amarilla pintada",
+      "name-de": "Angemalter gelber Stern",
+      "name-pt": "Estrela Amarela Pintada"
+    },
+    {
+      "clue-id": 916,
+      "name-fr": "Fer \u00E0 cheval",
+      "name-en": "Horseshoe",
+      "name-es": "Herradura",
+      "name-de": "Hufeisen",
+      "name-pt": "Ferradura"
+    },
+    {
+      "clue-id": 917,
+      "name-fr": "Filon de cristaux multicolores",
+      "name-en": "Vein of Multicoloured Crystals",
+      "name-es": "Fil\u00F3n de cristales multicolor",
+      "name-de": "Erzader mit bunten Kristallen",
+      "name-pt": "Fil\u00E3o de Cristais Coloridos"
+    },
+    {
+      "clue-id": 918,
+      "name-fr": "Fleur de n\u00E9nuphar bleue",
+      "name-en": "Blue Waterlily Flower",
+      "name-es": "Flor de nen\u00FAfar azul",
+      "name-de": "Blaue Seerosenbl\u00FCte",
+      "name-pt": "Flor de Nen\u00FAfar Azul"
+    },
+    {
+      "clue-id": 919,
+      "name-fr": "Fleurs smiley",
+      "name-en": "Smiley Flowers",
+      "name-es": "Flores emoticono",
+      "name-de": "Smiley-Blumen",
+      "name-pt": "Flores Smiley"
+    },
+    {
+      "clue-id": 920,
+      "name-fr": "Fl\u00E8che dans une pomme",
+      "name-en": "Arrow Through an Api",
+      "name-es": "Flecha en una manzana",
+      "name-de": "Pfeil in einem Apfel",
+      "name-pt": "Flecha na Ma\u00E7\u00E3"
+    },
+    {
+      "clue-id": 921,
+      "name-fr": "Framboisier",
+      "name-en": "Raspberry Bush",
+      "name-es": "Frambueso",
+      "name-de": "Himbeerstrauch",
+      "name-pt": "P\u00E9 de Framboesa"
+    },
+    {
+      "clue-id": 922,
+      "name-fr": "Girouette dragodinde",
+      "name-en": "Dragoturkey Weathervane",
+      "name-es": "Veleta de dragopavo",
+      "name-de": "Dracotruter-Windfahne",
+      "name-pt": "Cata-Vento de Dragoperu"
+    },
+    {
+      "clue-id": 923,
+      "name-fr": "Gravure d\u0027aile",
+      "name-en": "Wing Engraving",
+      "name-es": "Grabado de ala",
+      "name-de": "Fl\u00FCgel-Gravur",
+      "name-pt": "Gravura de Asa"
+    },
+    {
+      "clue-id": 924,
+      "name-fr": "Gravure d\u0027arakne",
+      "name-en": "Arachnee Engraving",
+      "name-es": "Grabado de arakna",
+      "name-de": "Arachnee-Gravur",
+      "name-pt": "Gravura de Arakne"
+    },
+    {
+      "clue-id": 925,
+      "name-fr": "Gravure d\u0027oeil",
+      "name-en": "Eye Engraving",
+      "name-es": "Grabado de ojo",
+      "name-de": "Augen-Gravur",
+      "name-pt": "Gravura de Olho"
+    },
+    {
+      "clue-id": 926,
+      "name-fr": "Gravure d\u0027Ep\u00E9e",
+      "name-en": "Sword Engraving",
+      "name-es": "Grabado de espada",
+      "name-de": "Schwert-Gravur",
+      "name-pt": "Gravura de Espada"
+    },
+    {
+      "clue-id": 927,
+      "name-fr": "Gravure d\u0027\u00E9toile",
+      "name-en": "Star Engraving",
+      "name-es": "Grabado de estrella",
+      "name-de": "Stern-Gravur",
+      "name-pt": "Gravura de Estrela"
+    },
+    {
+      "clue-id": 928,
+      "name-fr": "Gravure de bouftou",
+      "name-en": "Gobball Engraving",
+      "name-es": "Grabado de jalat\u00F3",
+      "name-de": "Fresssack-Gravur",
+      "name-pt": "Gravura de Papatudo"
+    },
+    {
+      "clue-id": 929,
+      "name-fr": "Gravure de boule de poche",
+      "name-en": "Pocket Ball Engraving",
+      "name-es": "Grabado de poketbola",
+      "name-de": "Taschenkugel-Gravur",
+      "name-pt": "Gravura de Bola de Bolso"
+    },
+    {
+      "clue-id": 930,
+      "name-fr": "Gravure de chacha",
+      "name-en": "Bow Meow Engraving",
+      "name-es": "Grabado de miaumiau",
+      "name-de": "Maunzmiez-Gravur",
+      "name-pt": "Gravura de Miaw"
+    },
+    {
+      "clue-id": 931,
+      "name-fr": "Gravure de clef",
+      "name-en": "Key Engraving",
+      "name-es": "Grabado de llave",
+      "name-de": "Schl\u00FCssel-Gravur",
+      "name-pt": "Gravura de Chave"
+    },
+    {
+      "clue-id": 932,
+      "name-fr": "Gravure de coeur",
+      "name-en": "Heart Engraving",
+      "name-es": "Grabado de coraz\u00F3n",
+      "name-de": "Herz-Gravur",
+      "name-pt": "Gravura de Cora\u00E7\u00E3o"
+    },
+    {
+      "clue-id": 933,
+      "name-fr": "Gravure de cr\u00E2ne",
+      "name-en": "Skull Engraving",
+      "name-es": "Grabado de cr\u00E1neo",
+      "name-de": "Sch\u00E4del-Gravur",
+      "name-pt": "Gravura de Caveira"
+    },
+    {
+      "clue-id": 934,
+      "name-fr": "Gravure de croix",
+      "name-en": "Cross Engraving",
+      "name-es": "Grabado de cruz",
+      "name-de": "Kreuz-Gravur",
+      "name-pt": "Gravura de Cruz"
+    },
+    {
+      "clue-id": 935,
+      "name-fr": "Gravure de Dofus",
+      "name-en": "Dofus Engraving",
+      "name-es": "Grabado de dofus",
+      "name-de": "Dofus-Gravur",
+      "name-pt": "Gravura de Dofus"
+    },
+    {
+      "clue-id": 936,
+      "name-fr": "Gravure de dragodinde",
+      "name-en": "Dragoturkey Engraving",
+      "name-es": "Grabado de dragopavo",
+      "name-de": "Dracotruter-Gravur",
+      "name-pt": "Gravura de Dragoperu"
+    },
+    {
+      "clue-id": 937,
+      "name-fr": "Gravure de fant\u00F4me",
+      "name-en": "Ghost Engraving",
+      "name-es": "Grabado de fantasma",
+      "name-de": "Phantom-Gravur",
+      "name-pt": "Gravura de Fantasma"
+    },
+    {
+      "clue-id": 938,
+      "name-fr": "Gravure de Firefoux",
+      "name-en": "Firefoux Engraving",
+      "name-es": "Grabado de firefux",
+      "name-de": "Feuerfux-Gravur",
+      "name-pt": "Gravura de Fogofox"
+    },
+    {
+      "clue-id": 939,
+      "name-fr": "Gravure de fleur",
+      "name-en": "Flower Engraving",
+      "name-es": "Grabado de flor",
+      "name-de": "Blumen-Gravur",
+      "name-pt": "Gravura de Flor"
+    },
+    {
+      "clue-id": 940,
+      "name-fr": "Gravure de fl\u00E8che",
+      "name-en": "Arrow Engraving",
+      "name-es": "Grabado de flecha",
+      "name-de": "Pfeil-Gravur",
+      "name-pt": "Gravura de Flecha"
+    },
+    {
+      "clue-id": 941,
+      "name-fr": "Gravure de Gelax",
+      "name-en": "Jellix Engraving",
+      "name-es": "Grabado de Gelax",
+      "name-de": "Gelax-Gravur",
+      "name-pt": "Gravura de Gelax"
+    },
+    {
+      "clue-id": 942,
+      "name-fr": "Gravure de Kama",
+      "name-en": "Kama Engraving",
+      "name-es": "Grabado de kama",
+      "name-de": "Kama-Gravur",
+      "name-pt": "Gravura de Kama"
+    },
+    {
+      "clue-id": 943,
+      "name-fr": "Gravure de lune",
+      "name-en": "Moon Engraving",
+      "name-es": "Grabado de luna",
+      "name-de": "Mond-Gravur",
+      "name-pt": "Gravura de Lua"
+    },
+    {
+      "clue-id": 944,
+      "name-fr": "Gravure de papatte",
+      "name-en": "Pawpaw Engraving",
+      "name-es": "Grabado de patita",
+      "name-de": "Pf\u00F6tchen-Gravur",
+      "name-pt": "Gravura de Patinha"
+    },
+    {
+      "clue-id": 946,
+      "name-fr": "Gravure de rose des vents",
+      "name-en": "Compass Rose Engraving",
+      "name-es": "Grabado de rosa de los vientos",
+      "name-de": "Windrosen-Gravur",
+      "name-pt": "Gravura de Rosa dos Ventos"
+    },
+    {
+      "clue-id": 947,
+      "name-fr": "Gravure de soleil",
+      "name-en": "Sun Engraving",
+      "name-es": "Grabado de sol",
+      "name-de": "Sonnen-Gravur",
+      "name-pt": "Gravura de Sol"
+    },
+    {
+      "clue-id": 948,
+      "name-fr": "Gravure de spirale",
+      "name-en": "Spiral Engraving",
+      "name-es": "Grabado de espiral",
+      "name-de": "Spiral-Gravur",
+      "name-pt": "Gravura de Espiral"
+    },
+    {
+      "clue-id": 949,
+      "name-fr": "Gravure de symbole de qu\u00EAte",
+      "name-en": "Quest Symbol Engraving",
+      "name-es": "Grabado de s\u00EDmbolo de misi\u00F3n",
+      "name-de": "Gravur eines Quest-Symbols",
+      "name-pt": "Gravura de S\u00EDmbolo de Miss\u00E3o"
+    },
+    {
+      "clue-id": 950,
+      "name-fr": "Gravure de symbole \u00E9gal",
+      "name-en": "Equals Sign Engraving",
+      "name-es": "Grabado de s\u00EDmbolo igual",
+      "name-de": "Gravur eines Gleich-Symbols",
+      "name-pt": "Gravura de Sinal de Igual"
+    },
+    {
+      "clue-id": 951,
+      "name-fr": "Gravure de tofu",
+      "name-en": "Tofu Engraving",
+      "name-es": "Grabado de tofu",
+      "name-de": "Tofu-Gravur",
+      "name-pt": "Gravura de Tofu"
+    },
+    {
+      "clue-id": 952,
+      "name-fr": "Gravure de wabbit",
+      "name-en": "Wabbit Engraving",
+      "name-es": "Grabado de wabbit",
+      "name-de": "Wabbit-Gravur",
+      "name-pt": "Gravura de Wabbit"
+    },
+    {
+      "clue-id": 953,
+      "name-fr": "Gravure de wukin",
+      "name-en": "Wukin Engraving",
+      "name-es": "Grabado de wukin",
+      "name-de": "Wukin-Gravur",
+      "name-pt": "Gravura de Wukin"
+    },
+    {
+      "clue-id": 954,
+      "name-fr": "Gravure de logo Ankama",
+      "name-en": "Ankama Logo Engraving",
+      "name-es": "Grabado de logo de Ankama",
+      "name-de": "Gravur des Ankama-Logos",
+      "name-pt": "Gravura Logo Ankama"
+    },
+    {
+      "clue-id": 955,
+      "name-fr": "Grelot",
+      "name-en": "Bell",
+      "name-es": "Cascabel",
+      "name-de": "Schelle",
+      "name-pt": "Guizo"
+    },
+    {
+      "clue-id": 956,
+      "name-fr": "Hache bris\u00E9e",
+      "name-en": "Broken Axe",
+      "name-es": "Hacha rota",
+      "name-de": "Zerbrochene Axt",
+      "name-pt": "Machado Quebrado"
+    },
+    {
+      "clue-id": 957,
+      "name-fr": "Kaliptus coup\u00E9",
+      "name-en": "Cut Kaliptus",
+      "name-es": "Kalipto cortado",
+      "name-de": "Gef\u00E4llter Kalyptus",
+      "name-pt": "Kaliptus Cortado"
+    },
+    {
+      "clue-id": 958,
+      "name-fr": "Kaliptus \u00E0 fleurs jaunes",
+      "name-en": "Yellow-Flowered Kaliptus",
+      "name-es": "Kalipto de flores amarillas",
+      "name-de": "Kalyptus mit gelben Bl\u00FCten",
+      "name-pt": "Kaliptus com Flores Amarelas"
+    },
+    {
+      "clue-id": 959,
+      "name-fr": "Kama peint",
+      "name-en": "Painted Kama",
+      "name-es": "Kama pintado",
+      "name-de": "Bemalter Kama",
+      "name-pt": "Kama Pintado"
+    },
+    {
+      "clue-id": 960,
+      "name-fr": "Lampadaire fungus",
+      "name-en": "Fungus Lamppost",
+      "name-es": "Farola fongo",
+      "name-de": "Pilz-Laterne",
+      "name-pt": "Lamparina de Fungo"
+    },
+    {
+      "clue-id": 961,
+      "name-fr": "Lampion bleu",
+      "name-en": "Blue Paper Lantern",
+      "name-es": "Farolillo azul",
+      "name-de": "Blauer Lampion",
+      "name-pt": "Lanterna Azul"
+    },
+    {
+      "clue-id": 962,
+      "name-fr": "Langue dans un trou",
+      "name-en": "Tongue in a Hole",
+      "name-es": "Lengua en un agujero",
+      "name-de": "Zunge in einem Loch",
+      "name-pt": "L\u00EDngua num Buraco"
+    },
+    {
+      "clue-id": 963,
+      "name-fr": "Lanterne au cr\u00E2ne luminescent",
+      "name-en": "Lantern with a Glowing Skull",
+      "name-es": "Candil con cr\u00E1neo luminiscente",
+      "name-de": "Laterne mit leuchtendem Sch\u00E4del",
+      "name-pt": "Lanterna de Caveira Luminescente"
+    },
+    {
+      "clue-id": 964,
+      "name-fr": "Lapino origami",
+      "name-en": "Origami Coney",
+      "name-es": "Cunejo origami",
+      "name-de": "Origami-H\u00E4schen",
+      "name-pt": "Toelho de Origami"
+    },
+    {
+      "clue-id": 965,
+      "name-fr": "Logo Ankama peint",
+      "name-en": "Painted Ankama Logo",
+      "name-es": "Logo de Ankama pintado",
+      "name-de": "Gemaltes Ankama-Logo",
+      "name-pt": "Logo Ankama Pintado"
+    },
+    {
+      "clue-id": 966,
+      "name-fr": "Marionnette",
+      "name-en": "Puppet",
+      "name-es": "Marioneta",
+      "name-de": "Marionette",
+      "name-pt": "Marionete"
+    },
+    {
+      "clue-id": 967,
+      "name-fr": "Menottes",
+      "name-en": "Cuffs",
+      "name-es": "Esposas",
+      "name-de": "Handfesseln",
+      "name-pt": "Algemas"
+    },
+    {
+      "clue-id": 968,
+      "name-fr": "Minouki",
+      "name-en": "Kitty-Neko",
+      "name-es": "Miauki",
+      "name-de": "Minuki",
+      "name-pt": "Miawki"
+    },
+    {
+      "clue-id": 969,
+      "name-fr": "Moufles jaunes",
+      "name-en": "Yellow Mittens",
+      "name-es": "Manoplas amarillas",
+      "name-de": "Gelbe Handschuhe",
+      "name-pt": "Luvas Amarelas"
+    },
+    {
+      "clue-id": 970,
+      "name-fr": "Moufles rouges",
+      "name-en": "Red Mittens",
+      "name-es": "Manoplas rojas",
+      "name-de": "Rote Handschuhe",
+      "name-pt": "Luvas Vermelhas"
+    },
+    {
+      "clue-id": 971,
+      "name-fr": "Niche dans une caisse",
+      "name-en": "Crate Kennel",
+      "name-es": "Caseta en una caja",
+      "name-de": "Nische in einer Kiste",
+      "name-pt": "Casinha em Caixa"
+    },
+    {
+      "clue-id": 972,
+      "name-fr": "Ob\u00E9lisque enfoui",
+      "name-en": "Buried Obelisk",
+      "name-es": "Obelisco enterrado",
+      "name-de": "Vergrabener Obelisk",
+      "name-pt": "Obelisco Enterrado"
+    },
+    {
+      "clue-id": 973,
+      "name-fr": "\u0152il de shushu peint",
+      "name-en": "Painted Shushu Eye",
+      "name-es": "Ojo de fab\u0027huritu pintado",
+      "name-de": "Gemaltes Shushu-Auge",
+      "name-pt": "Olho de Shushu Pintado"
+    },
+    {
+      "clue-id": 974,
+      "name-fr": "Oeuf dans un trou",
+      "name-en": "Egg in a Hole",
+      "name-es": "Huevo en un agujero",
+      "name-de": "Ei in einem Loch",
+      "name-pt": "Ovo num Buraco"
+    },
+    {
+      "clue-id": 975,
+      "name-fr": "Ornement flocon",
+      "name-en": "Snowflake Ornament",
+      "name-es": "Ornamento copo",
+      "name-de": "Flocken-Verzierung",
+      "name-pt": "Ornamento de Floco"
+    },
+    {
+      "clue-id": 976,
+      "name-fr": "Os dans la lave",
+      "name-en": "Bone in Lava",
+      "name-es": "Hueso en la lava",
+      "name-de": "Knochen in der Lava",
+      "name-pt": "Osso na Lava"
+    },
+    {
+      "clue-id": 977,
+      "name-fr": "Paire de lunettes",
+      "name-en": "Pair of Glasses",
+      "name-es": "Par de gafas",
+      "name-de": "Brille",
+      "name-pt": "Par de \u00D3culos"
+    },
+    {
+      "clue-id": 978,
+      "name-fr": "Palmier peint d\u0027un chacha",
+      "name-en": "Palm Tree with Painted Bow Meow",
+      "name-es": "Palmera con miaumiau pintado",
+      "name-de": "Mit einer Maunzmiez bemalte Palme",
+      "name-pt": "Palmeira Pintada de Miaw"
+    },
+    {
+      "clue-id": 979,
+      "name-fr": "Palmier peint \u00E0 rayures",
+      "name-en": "Palm Tree with Painted Stripes",
+      "name-es": "Palmera con rayas pintadas",
+      "name-de": "Mit Streifen bemalte Palme",
+      "name-pt": "Palmeira Pintada Listrada"
+    },
+    {
+      "clue-id": 980,
+      "name-fr": "Palmier surcharg\u00E9 de noix de coco",
+      "name-en": "Palm Tree Overloaded with Coconuts",
+      "name-es": "Palmera sobrecargada de cocos",
+      "name-de": "\u00DCppig behangene Kokosnusspalme",
+      "name-pt": "Coqueiro Carregado"
+    },
+    {
+      "clue-id": 981,
+      "name-fr": "Palmier \u00E0 feuilles carr\u00E9es",
+      "name-en": "Palm Tree with Square Fronds",
+      "name-es": "Palmera con hojas cuadradas",
+      "name-de": "Palme mit quadratischen Bl\u00E4ttern",
+      "name-pt": "Palmeira de Folhas Quadradas"
+    },
+    {
+      "clue-id": 982,
+      "name-fr": "Palmier \u00E0 feuilles d\u00E9chir\u00E9es",
+      "name-en": "Palm Tree with Torn Fronds",
+      "name-es": "Palmera con hojas rotas",
+      "name-de": "Palme mit zerrissenen Bl\u00E4ttern",
+      "name-pt": "Palmeira de Folhas Rasgadas"
+    },
+    {
+      "clue-id": 983,
+      "name-fr": "Palmier \u00E0 pois",
+      "name-en": "Spotted Palm Tree",
+      "name-es": "Palmera con lunares",
+      "name-de": "Gepunktete Palme",
+      "name-pt": "Palmeira de Bolinha"
+    },
+    {
+      "clue-id": 984,
+      "name-fr": "Palmifleur bleu fleuri",
+      "name-en": "Blue Flowering Palmflower",
+      "name-es": "Palmiflor azul florecida",
+      "name-de": "Blaubl\u00FCtige Palmblume",
+      "name-pt": "Palmiflor Azul Florido"
+    },
+    {
+      "clue-id": 985,
+      "name-fr": "Palmifleur jaune fleuri",
+      "name-en": "Yellow Flowering Palmflower",
+      "name-es": "Palmiflor amarillo florecida",
+      "name-de": "Gelbbl\u00FCtige Palmblume",
+      "name-pt": "Palmiflor Amarelo Florido"
+    },
+    {
+      "clue-id": 986,
+      "name-fr": "Palmifleur vert fleuri",
+      "name-en": "Green Flowering Palmflower",
+      "name-es": "Palmiflor verde florecida",
+      "name-de": "Gr\u00FCnbl\u00FCtige Palmblume",
+      "name-pt": "Palmiflor Verde Florido"
+    },
+    {
+      "clue-id": 987,
+      "name-fr": "Panneau nonosse",
+      "name-en": "Bone Sign",
+      "name-es": "Cartel de huesito",
+      "name-de": "Kn\u00F6chelchen-Schild",
+      "name-pt": "Placa de Ossinho"
+    },
+    {
+      "clue-id": 989,
+      "name-fr": "Peinture de Dofus",
+      "name-en": "Dofus Painting",
+      "name-es": "Pintura de dofus",
+      "name-de": "Dofus-Gem\u00E4lde",
+      "name-pt": "Pintura de Dofus"
+    },
+    {
+      "clue-id": 990,
+      "name-fr": "Peluche de likrone",
+      "name-en": "Stuffed Unikron",
+      "name-es": "Peluche de urikornio",
+      "name-de": "Einohr-Pl\u00FCschtier",
+      "name-pt": "Unikr\u00F4nio de Pel\u00FAcia"
+    },
+    {
+      "clue-id": 991,
+      "name-fr": "Pioche plant\u00E9e",
+      "name-en": "Planted Pickaxe",
+      "name-es": "Pico clavado",
+      "name-de": "Eingerammte Spitzhacke",
+      "name-pt": "Picareta Fincada"
+    },
+    {
+      "clue-id": 992,
+      "name-fr": "Poisson grill\u00E9 embroch\u00E9",
+      "name-en": "Grilled Fish on a Skewer",
+      "name-es": "Pescado a la plancha en brocheta",
+      "name-de": "Aufgespie\u00DFter gegrillter Fisch",
+      "name-pt": "Peixe Grelhado no Espetinho"
+    },
+    {
+      "clue-id": 993,
+      "name-fr": "Poup\u00E9e koalak",
+      "name-en": "Koalak Doll",
+      "name-es": "Mu\u00F1eca koalak",
+      "name-de": "Koalak-Puppe",
+      "name-pt": "Boneco de Koalak"
+    },
+    {
+      "clue-id": 994,
+      "name-fr": "Queue d\u0027Osamodas",
+      "name-en": "Osamodas Tail",
+      "name-es": "Cola de osamodas",
+      "name-de": "Osamodas\u0027 Schwanz",
+      "name-pt": "Rabo de Osamodas"
+    },
+    {
+      "clue-id": 995,
+      "name-fr": "Rocher Dofus",
+      "name-en": "Dofus Rock",
+      "name-es": "Roca dofus",
+      "name-de": "Dofus-Felsen",
+      "name-pt": "Rocha Dofus"
+    },
+    {
+      "clue-id": 996,
+      "name-fr": "Rocher d\u00E9",
+      "name-en": "Die Rock",
+      "name-es": "Roca dado",
+      "name-de": "W\u00FCrfel-Felsen",
+      "name-pt": "Rocha Dado"
+    },
+    {
+      "clue-id": 999,
+      "name-fr": "Rocher taill\u00E9 en ar\u00E8tes de poisson",
+      "name-en": "Rock Carved into Fish Bones",
+      "name-es": "Roca tallada en espinas de pescado",
+      "name-de": "In Fischgr\u00E4ten behauener Felsen",
+      "name-pt": "Rocha Talhada em Espinha de Peixe"
+    },
+    {
+      "clue-id": 1000,
+      "name-fr": "Rocher \u00E0 s\u00E9dimentation verticale",
+      "name-en": "Vertical Sedimentation Rock",
+      "name-es": "Roca de sedimentaci\u00F3n vertical",
+      "name-de": "Felsen mit vertikaler Sedimentation",
+      "name-pt": "Rocha de Sedimenta\u00E7\u00E3o Vertical"
+    },
+    {
+      "clue-id": 1001,
+      "name-fr": "Rose des vents dor\u00E9e",
+      "name-en": "Golden Compass Rose",
+      "name-es": "Rosa de los vientos dorada",
+      "name-de": "Goldene Windrose",
+      "name-pt": "Rosa dos Ventos Dourada"
+    },
+    {
+      "clue-id": 1002,
+      "name-fr": "Rose noire",
+      "name-en": "Black Rose",
+      "name-es": "Rosa negra",
+      "name-de": "Schwarze Rose",
+      "name-pt": "Rosa Negra"
+    },
+    {
+      "clue-id": 1003,
+      "name-fr": "Rouage pris dans la glace",
+      "name-en": "Cog Caught in Ice",
+      "name-es": "Rueda dentada atrapada en el hielo",
+      "name-de": "Im Eis eingeschlossenes R\u00E4dchen",
+      "name-pt": "Mecanismo Preso no Gelo"
+    },
+    {
+      "clue-id": 1005,
+      "name-fr": "Rune nimbos",
+      "name-en": "Stubbyob Rune",
+      "name-es": "Runa taponano",
+      "name-de": "Nimbos-Rune",
+      "name-pt": "Runa Brutan\u00E3"
+    },
+    {
+      "clue-id": 1006,
+      "name-fr": "Sapin couch\u00E9",
+      "name-en": "Felled Pine Tree",
+      "name-es": "Abeto tumbado",
+      "name-de": "Liegende Tanne",
+      "name-pt": "Pinheiro Deitado"
+    },
+    {
+      "clue-id": 1007,
+      "name-fr": "Serrure dor\u00E9e",
+      "name-en": "Golden Lock",
+      "name-es": "Cerradura dorada",
+      "name-de": "Goldenes Schloss",
+      "name-pt": "Fechadura Dourada"
+    },
+    {
+      "clue-id": 1008,
+      "name-fr": "Slip \u00E0 petit coeur",
+      "name-en": "Heart Undies",
+      "name-es": "Braga con coraz\u00F3n",
+      "name-de": "Slip mit kleinem Herz",
+      "name-pt": "Cueca de Cora\u00E7\u00E3ozinho"
+    },
+    {
+      "clue-id": 1009,
+      "name-fr": "Soupe de bananagrumes",
+      "name-en": "Citronana Soup",
+      "name-es": "Sopa de bananaranjas",
+      "name-de": "Bananananas-Suppe",
+      "name-pt": "Sopa de Bananagrume"
+    },
+    {
+      "clue-id": 1010,
+      "name-fr": "Squelette d\u0027Ouginak pendu",
+      "name-en": "Hanging Ouginak Skeleton",
+      "name-es": "Esqueleto de uginak coldado",
+      "name-de": "Aufgeh\u00E4ngtes Ouginak-Skelett",
+      "name-pt": "Esqueleto de Kilorf Enforcado"
+    },
+    {
+      "clue-id": 1011,
+      "name-fr": "Statue koalak",
+      "name-en": "Koalak Statue",
+      "name-es": "Estatua de koalak",
+      "name-de": "Koalak-Statue",
+      "name-pt": "Est\u00E1tua de Koalak"
+    },
+    {
+      "clue-id": 1012,
+      "name-fr": "Statue sidoa",
+      "name-en": "Rotcere Statue",
+      "name-es": "Estatua de m\u00F3guiz",
+      "name-de": "Sidoa-Statue",
+      "name-pt": "Est\u00E1tua de Gwaimo"
+    },
+    {
+      "clue-id": 1013,
+      "name-fr": "Statue wabbit",
+      "name-en": "Wabbit Statue",
+      "name-es": "Estatua de wabbit",
+      "name-de": "Wabbit-Statue",
+      "name-pt": "Est\u00E1tua de Wabbit"
+    },
+    {
+      "clue-id": 1014,
+      "name-fr": "St\u00E8le chacha",
+      "name-en": "Bow Meow Stele",
+      "name-es": "Estatua de miaumiau",
+      "name-de": "Maunzmiez-Stele",
+      "name-pt": "Estela de Miaw"
+    },
+    {
+      "clue-id": 1015,
+      "name-fr": "Sucre d\u0027orge",
+      "name-en": "Candy Cane",
+      "name-es": "Bast\u00F3n de caramelo",
+      "name-de": "Gerstige Zuckerstange",
+      "name-pt": "Doce de Cevada"
+    },
+    {
+      "clue-id": 1016,
+      "name-fr": "Symbole de qu\u00EAte peint",
+      "name-en": "Painted Quest Symbol",
+      "name-es": "S\u00EDmbolo de misi\u00F3n pintado",
+      "name-de": "Bemaltes Quest-Symbol",
+      "name-pt": "S\u00EDmbolo de Miss\u00E3o Pintado"
+    },
+    {
+      "clue-id": 1017,
+      "name-fr": "S\u00E8ve qui s\u0027\u00E9coule",
+      "name-en": "Flowing Sap",
+      "name-es": "Savia que cae",
+      "name-de": "Ausflie\u00DFender Saft",
+      "name-pt": "Seiva Escorrendo"
+    },
+    {
+      "clue-id": 1018,
+      "name-fr": "Talisman en papier",
+      "name-en": "Paper Talisman",
+      "name-es": "Talism\u00E1n de papel",
+      "name-de": "Talisman aus Papier",
+      "name-pt": "Talism\u00E3 de Papel"
+    },
+    {
+      "clue-id": 1019,
+      "name-fr": "Tambour papatte",
+      "name-en": "Pawpaw Drum",
+      "name-es": "Tambor con patita",
+      "name-de": "Pf\u00F6tchen-Trommel",
+      "name-pt": "Tambor de Patinha"
+    },
+    {
+      "clue-id": 1020,
+      "name-fr": "Tambour \u00E0 rayures",
+      "name-en": "Striped Drum",
+      "name-es": "Tambor con rayas",
+      "name-de": "Gestreifte Trommel",
+      "name-pt": "Tambor Listrado"
+    },
+    {
+      "clue-id": 1021,
+      "name-fr": "Th\u00E9i\u00E8re \u00E0 rayures",
+      "name-en": "Striped Teapot",
+      "name-es": "Tetera con rayas",
+      "name-de": "Gestreifte Teekanne",
+      "name-pt": "Chaleira Listrada"
+    },
+    {
+      "clue-id": 1022,
+      "name-fr": "Tissu \u00E0 carreaux nou\u00E9",
+      "name-en": "Knotted Chequered Cloth",
+      "name-es": "Tela de cuadros anudada",
+      "name-de": "Geknotetes kariertes Tuch",
+      "name-pt": "Pano Quadriculado com N\u00F3"
+    },
+    {
+      "clue-id": 1023,
+      "name-fr": "Tombe grav\u00E9e d\u0027un bouclier",
+      "name-en": "Tomb with an Engraved Shield",
+      "name-es": "Tumba grabada con un escudo",
+      "name-de": "Grab mit eingraviertem Schild",
+      "name-pt": "Tumba com Escudo Gravado"
+    },
+    {
+      "clue-id": 1024,
+      "name-fr": "Tombe inond\u00E9e",
+      "name-en": "Flooded Tomb",
+      "name-es": "Tumba inundada",
+      "name-de": "\u00DCberflutetes Grab",
+      "name-pt": "Tumba Alagada"
+    },
+    {
+      "clue-id": 1025,
+      "name-fr": "Tombe inond\u00E9e de sang",
+      "name-en": "Blood-Filled Tomb",
+      "name-es": "Tumba inundada de sangre",
+      "name-de": "Blut\u00FCberschwemmtes Grab",
+      "name-pt": "Tumba Alagada de Sangue"
+    },
+    {
+      "clue-id": 1026,
+      "name-fr": "Torii cass\u00E9",
+      "name-en": "Broken Torii",
+      "name-es": "Torii roto",
+      "name-de": "Zerbrochener Tori",
+      "name-pt": "Torii Quebrado"
+    },
+    {
+      "clue-id": 1027,
+      "name-fr": "Trace de main en sang",
+      "name-en": "Bloody Handprint",
+      "name-es": "Huella de mano ensangrentada",
+      "name-de": "Blutiger Handabdruck",
+      "name-pt": "Marca de M\u00E3o Ensanguentada"
+    },
+    {
+      "clue-id": 1028,
+      "name-fr": "Tricycle",
+      "name-en": "Tricycle",
+      "name-es": "Triciclo",
+      "name-de": "Dreirad",
+      "name-pt": "Triciclo"
+    },
+    {
+      "clue-id": 1029,
+      "name-fr": "Trou mielleux",
+      "name-en": "Honey Hole",
+      "name-es": "Agujero meloso",
+      "name-de": "Honiggef\u00FClltes Loch",
+      "name-pt": "Buraco de Mel"
+    },
+    {
+      "clue-id": 1030,
+      "name-fr": "Tube rempli de tofus",
+      "name-en": "Tube of Tofus",
+      "name-es": "Tubo lleno de tofus",
+      "name-de": "Mit Tofus gef\u00FCllte R\u00F6hre",
+      "name-pt": "Tubo Cheio de Tofus"
+    },
+    {
+      "clue-id": 1031,
+      "name-fr": "Grand coquillage cass\u00E9",
+      "name-en": "Big Broken Shell",
+      "name-es": "Gran valva rota",
+      "name-de": "Gro\u00DFe zerbrochene Muschel",
+      "name-pt": "Concha Grande Quebrada"
+    },
+    {
+      "clue-id": 1032,
+      "name-fr": "Kaliptus grignot\u00E9",
+      "name-en": "Nibbled Kaliptus",
+      "name-es": "Kalipto arrasado",
+      "name-de": "Angeknabberter Kalyptus",
+      "name-pt": "Kaliptus Ro\u00EDdo"
+    },
+    {
+      "clue-id": 1033,
+      "name-fr": "Rocher cr\u00E2ne",
+      "name-en": "Skull Rock",
+      "name-es": "Roca cr\u00E1neo",
+      "name-de": "Sch\u00E4del-Felsen",
+      "name-pt": "Rocha Caveira"
+    }
+  ]
+}

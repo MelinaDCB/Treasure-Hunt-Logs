@@ -120,8 +120,9 @@
             // 
             // comboBox1
             // 
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(6, 49);
+            comboBox1.Location = new Point(21, 59);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(224, 23);
             comboBox1.TabIndex = 8;
@@ -131,7 +132,7 @@
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Location = new Point(158, 79);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(236, 134);
+            groupBox1.Size = new Size(340, 134);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
