@@ -38,6 +38,7 @@
             textBox_XCoordinate = new TextBox();
             comboBox_Clues = new ComboBox();
             groupBox_Clue = new GroupBox();
+            label_Result = new Label();
             button_NewHunt = new Button();
             button_DisplayCurrentHunt = new Button();
             button_EraseLastStep = new Button();
@@ -132,9 +133,11 @@
             comboBox_Clues.Name = "comboBox_Clues";
             comboBox_Clues.Size = new Size(224, 23);
             comboBox_Clues.TabIndex = 8;
+            comboBox_Clues.SelectedIndexChanged += comboBox_Clues_SelectedIndexChanged;
             // 
             // groupBox_Clue
             // 
+            groupBox_Clue.Controls.Add(label_Result);
             groupBox_Clue.Controls.Add(comboBox_Clues);
             groupBox_Clue.Location = new Point(158, 79);
             groupBox_Clue.Name = "groupBox_Clue";
@@ -142,6 +145,15 @@
             groupBox_Clue.TabIndex = 2;
             groupBox_Clue.TabStop = false;
             groupBox_Clue.Text = "Clue";
+            // 
+            // label_Result
+            // 
+            label_Result.AutoSize = true;
+            label_Result.ForeColor = Color.Green;
+            label_Result.Location = new Point(21, 95);
+            label_Result.Name = "label_Result";
+            label_Result.Size = new Size(0, 15);
+            label_Result.TabIndex = 12;
             // 
             // button_NewHunt
             // 
@@ -208,6 +220,7 @@
             groupBox_Coordinates.ResumeLayout(false);
             groupBox_Coordinates.PerformLayout();
             groupBox_Clue.ResumeLayout(false);
+            groupBox_Clue.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,5 +241,6 @@
         private Button button_DisplayCurrentHunt;
         private Button button_EraseLastStep;
         private Button button_SaveHunt;
+        private Label label_Result;
     }
 }

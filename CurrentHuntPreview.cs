@@ -17,9 +17,14 @@ namespace Treasure_Hunt_Logs
             InitializeComponent();
         }
 
+        public List<string> CluesToShow {  get; set; }
+
         private void CurrentHuntPreview_Load(object sender, EventArgs e)
         {
-            //Load data from current hunt
+            foreach (var clue in CluesToShow)
+            {
+                richTextBox_clues.Lines = CluesToShow.ToArray();
+            }
         }
     }
 }

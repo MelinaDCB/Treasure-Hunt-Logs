@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -15,11 +14,12 @@ namespace Treasure_Hunt_Logs
         //[6, 22, "Smiley Flowers"], [7, 22, "Planted Pickaxe"], [8, 22, "Folded Paper Star"], [9, 22, "Folded Paper Star"], [10, 22, "Black and White Wheat"],
         //[11, 22, "Studded Belt"], [14, 22, ""]]
         int HuntLevel = 0;
-        string cluePath = "C:\\Users\\melin\\OneDrive\\Documents\\Projets\\Treasure Hunt Logs\\clues_full.json";
-        string SavePath = "";
+        string cluePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "clues_full.json");
+        string SavePath = Properties.Settings.Default.SavedHuntsPath;
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
         CluesList cl = new CluesList();
-        Hunt hunt = new Hunt();
+        List<THStep> ListSteps = new List<THStep>();
+        Hunt hunt;
         int x;
         int y;
 
@@ -40,8 +40,14 @@ namespace Treasure_Hunt_Logs
 
         public class Hunt
         {
+            public Hunt(int huntLevel, List<THStep> steps)
+            {
+                HuntLevel = huntLevel;
+                Steps = steps;
+            }
+
             public int HuntLevel { get; set; }
-            List<THStep> Steps { get; set; }
+            public List<THStep> Steps { get; set; }
         }
 
         public class Clue
@@ -126,13 +132,20 @@ namespace Treasure_Hunt_Logs
 
         private void button_NewHunt_Click(object sender, EventArgs e)
         {
+            hunt = new Hunt(HuntLevel, ListSteps);
             hunt.HuntLevel = HuntLevel;
         }
 
         private void button_DisplayCurrentHuntClick(object sender, EventArgs e)
         {
             CurrentHuntPreview chp = new CurrentHuntPreview();
-            chp.Show();
+            chp.CluesToShow = new List<string>();
+            foreach (THStep ths in hunt.Steps)
+            {
+                string data = $"{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"";
+                chp.CluesToShow.Add(data);
+            }
+            chp.ShowDialog();
         }
 
         private void button_RedoHunt_Click(object sender, EventArgs e)
@@ -141,6 +154,31 @@ namespace Treasure_Hunt_Logs
         }
 
         private void button_SaveHunt_Click(object sender, EventArgs e)
+        {
+            if (SavePath == "")
+            {
+                FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                {
+                    SavePath = folderBrowserDialog.SelectedPath;
+                }
+
+                //OpenFileDialog openFileDialog = new OpenFileDialog();
+                //openFileDialog.Filter = "json files (*.json)";
+                //openFileDialog.RestoreDirectory = true;
+                //openFileDialog.Title = "Please Select the JSON File you want to save the data to :"
+                //if (openFileDialog.ShowDialog() == DialogResult.OK)
+                //{
+                //    SavePath = openFileDialog.FileName;
+                //}
+            }
+            else
+            {
+                CreateHunt(hunt);
+            }
+        }
+
+        private void CreateHunt(Hunt hunt)
         {
 
         }
@@ -159,7 +197,6 @@ namespace Treasure_Hunt_Logs
                     MessageBox.Show("Please enter a valid coordinate");
                 }
             }
-
         }
 
         private void textBox_YCoordinate_Leave(object sender, EventArgs e)
@@ -176,7 +213,52 @@ namespace Treasure_Hunt_Logs
                     MessageBox.Show("Please enter a valid coordinate");
                 }
             }
+        }
 
+        private void comboBox_Clues_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (comboBox_HuntLevel.Text != null && comboBox_Language.Text != null &&
+            textBox_XCoordinate.Text != "" && textBox_YCoordinate.Text != "" &&
+            comboBox_Clues.Text != null)
+            {
+                try
+                {
+                    hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
+                    label_Result.Text = "Clue added successfuly.";
+                    CleanTextboxes();
+                    Thread.Sleep(1000);
+                    label_Result.Text = "";
+
+                }
+                catch (Exception ex)
+                {
+                    DialogResult dr = MessageBox.Show("Do you want to start a new hunt ?", "Confirmation", MessageBoxButtons.YesNo);
+                    if (dr == DialogResult.Yes)
+                    {
+                        hunt = new Hunt(HuntLevel, ListSteps);
+                        hunt.HuntLevel = HuntLevel;
+                        hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
+                        label_Result.Text = "Clue added successfuly.";
+                        CleanTextboxes();
+                        Thread.Sleep(1000);
+                        label_Result.Text = "";
+                    }
+                }
+            }
+        }
+
+        private THStep AddStep(int x, int y, string clue)
+        {
+            THStep ths = new THStep(x, y, clue);
+            return ths;
+        }
+
+        private void CleanTextboxes()
+        {
+            textBox_XCoordinate.Clear();
+            textBox_YCoordinate.Clear();
+            comboBox_Clues.SelectedIndex = -1;
         }
     }
 }
