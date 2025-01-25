@@ -36,17 +36,21 @@
             groupBox_Coordinates = new GroupBox();
             textBox_YCoordinate = new TextBox();
             textBox_XCoordinate = new TextBox();
-            comboBox1 = new ComboBox();
-            groupBox1 = new GroupBox();
+            comboBox_Clues = new ComboBox();
+            groupBox_Clue = new GroupBox();
+            button_NewHunt = new Button();
+            button_NextSetClues = new Button();
+            button_EditHunt = new Button();
+            button_SaveHunt = new Button();
             groupBox_Coordinates.SuspendLayout();
-            groupBox1.SuspendLayout();
+            groupBox_Clue.SuspendLayout();
             SuspendLayout();
             // 
             // label_THLogger
             // 
             label_THLogger.AutoSize = true;
             label_THLogger.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_THLogger.Location = new Point(163, 8);
+            label_THLogger.Location = new Point(125, 9);
             label_THLogger.Name = "label_THLogger";
             label_THLogger.Size = new Size(195, 25);
             label_THLogger.TabIndex = 0;
@@ -74,7 +78,7 @@
             // label_Language
             // 
             label_Language.AutoSize = true;
-            label_Language.Location = new Point(338, 46);
+            label_Language.Location = new Point(227, 46);
             label_Language.Name = "label_Language";
             label_Language.Size = new Size(65, 15);
             label_Language.TabIndex = 5;
@@ -83,7 +87,7 @@
             // comboBox_Language
             // 
             comboBox_Language.FormattingEnabled = true;
-            comboBox_Language.Location = new Point(409, 43);
+            comboBox_Language.Location = new Point(335, 43);
             comboBox_Language.Name = "comboBox_Language";
             comboBox_Language.Size = new Size(89, 23);
             comboBox_Language.TabIndex = 6;
@@ -118,31 +122,71 @@
             textBox_XCoordinate.TabIndex = 0;
             textBox_XCoordinate.TextAlign = HorizontalAlignment.Center;
             // 
-            // comboBox1
+            // comboBox_Clues
             // 
-            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(21, 59);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(224, 23);
-            comboBox1.TabIndex = 8;
+            comboBox_Clues.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox_Clues.FormattingEnabled = true;
+            comboBox_Clues.Location = new Point(21, 59);
+            comboBox_Clues.Name = "comboBox_Clues";
+            comboBox_Clues.Size = new Size(224, 23);
+            comboBox_Clues.TabIndex = 8;
             // 
-            // groupBox1
+            // groupBox_Clue
             // 
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Location = new Point(158, 79);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(340, 134);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBox_Clue.Controls.Add(comboBox_Clues);
+            groupBox_Clue.Location = new Point(158, 79);
+            groupBox_Clue.Name = "groupBox_Clue";
+            groupBox_Clue.Size = new Size(266, 134);
+            groupBox_Clue.TabIndex = 2;
+            groupBox_Clue.TabStop = false;
+            groupBox_Clue.Text = "Clue";
+            // 
+            // button_NewHunt
+            // 
+            button_NewHunt.Location = new Point(15, 242);
+            button_NewHunt.Name = "button_NewHunt";
+            button_NewHunt.Size = new Size(90, 40);
+            button_NewHunt.TabIndex = 8;
+            button_NewHunt.Text = "New Hunt";
+            button_NewHunt.UseVisualStyleBackColor = true;
+            // 
+            // button_NextSetClues
+            // 
+            button_NextSetClues.Location = new Point(121, 242);
+            button_NextSetClues.Name = "button_NextSetClues";
+            button_NextSetClues.Size = new Size(90, 40);
+            button_NextSetClues.TabIndex = 9;
+            button_NextSetClues.Text = "Next Set of Clues";
+            button_NextSetClues.UseVisualStyleBackColor = true;
+            // 
+            // button_EditHunt
+            // 
+            button_EditHunt.Location = new Point(227, 242);
+            button_EditHunt.Name = "button_EditHunt";
+            button_EditHunt.Size = new Size(90, 40);
+            button_EditHunt.TabIndex = 10;
+            button_EditHunt.Text = "Edit Hunt";
+            button_EditHunt.UseVisualStyleBackColor = true;
+            // 
+            // button_SaveHunt
+            // 
+            button_SaveHunt.Location = new Point(334, 242);
+            button_SaveHunt.Name = "button_SaveHunt";
+            button_SaveHunt.Size = new Size(90, 40);
+            button_SaveHunt.TabIndex = 11;
+            button_SaveHunt.Text = "Save Hunt";
+            button_SaveHunt.UseVisualStyleBackColor = true;
             // 
             // THLogs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(518, 491);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(436, 297);
+            Controls.Add(button_SaveHunt);
+            Controls.Add(button_EditHunt);
+            Controls.Add(button_NextSetClues);
+            Controls.Add(button_NewHunt);
+            Controls.Add(groupBox_Clue);
             Controls.Add(groupBox_Coordinates);
             Controls.Add(comboBox_Language);
             Controls.Add(label_Language);
@@ -154,7 +198,7 @@
             Load += THLogs_Load;
             groupBox_Coordinates.ResumeLayout(false);
             groupBox_Coordinates.PerformLayout();
-            groupBox1.ResumeLayout(false);
+            groupBox_Clue.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,7 +213,11 @@
         private GroupBox groupBox_Coordinates;
         private TextBox textBox_YCoordinate;
         private TextBox textBox_XCoordinate;
-        private ComboBox comboBox1;
-        private GroupBox groupBox1;
+        private ComboBox comboBox_Clues;
+        private GroupBox groupBox_Clue;
+        private Button button_NewHunt;
+        private Button button_NextSetClues;
+        private Button button_EditHunt;
+        private Button button_SaveHunt;
     }
 }

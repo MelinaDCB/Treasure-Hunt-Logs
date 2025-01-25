@@ -16,7 +16,7 @@ namespace Treasure_Hunt_Logs
         int HuntLevel = 0;
         string cluePath = "C:\\Users\\melin\\OneDrive\\Documents\\Projets\\Treasure Hunt Logs\\clues_full.json";
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
-
+        CluesList cl = new CluesList();
 
         public class THStep
         {
@@ -61,7 +61,33 @@ namespace Treasure_Hunt_Logs
         private void comboBox_Language_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            //Pick the right clues from the json file
+            string selectedLanguage = comboBox_Language.SelectedItem as string;
+
+            if (!string.IsNullOrEmpty(selectedLanguage) && cl.Clues != null)
+            {
+                var filteredClues = cl.Clues.Select(clue =>
+                {
+                    return selectedLanguage switch
+                    {
+                        "Français" => clue.FrenchText,
+                        "English" => clue.EnglishText,
+                        "Español" => clue.SpanishText,
+                        "Deutsch" => clue.GermanText,
+                        "Portugués" => clue.PortugueseText,
+                        _ => null
+                    };
+                }).Where(text => !string.IsNullOrEmpty(text)).ToList();
+
+                comboBox_Clues.Items.Clear();
+                comboBox_Clues.Items.AddRange(filteredClues.ToArray());
+
+                comboBox_Clues.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                comboBox_Clues.AutoCompleteSource = AutoCompleteSource.ListItems;
+            }
+            else
+            {
+                comboBox_Clues.Items.Clear();
+            }
         }
 
         private void comboBox_HuntLevel_SelectedIndexChanged(object sender, EventArgs e)
@@ -71,10 +97,11 @@ namespace Treasure_Hunt_Logs
 
         private void THLogs_Load(object sender, EventArgs e)
         {
-            comboBox_Language.Items.AddRange(Languages.ToArray());
-            comboBox_Language.SelectedIndex = 1;
-            comboBox_HuntLevel.SelectedIndex = 5;
             ClueComboBoxLoad();
+            comboBox_Language.DataSource = Languages;
+            comboBox_HuntLevel.SelectedIndex = 5;
+            comboBox_Language.Text = "";
+            comboBox_Clues.Text = "";
         }
 
         private void ClueComboBoxLoad()
@@ -82,9 +109,9 @@ namespace Treasure_Hunt_Logs
             using (var sr = new StreamReader(cluePath))
             {
                 var json = sr.ReadToEnd();
-                var cl = JsonSerializer.Deserialize<CluesList>(json);
-
+                cl = JsonSerializer.Deserialize<CluesList>(json);
             }
+            
         }
 
     }
