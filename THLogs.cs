@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -15,8 +16,12 @@ namespace Treasure_Hunt_Logs
         //[11, 22, "Studded Belt"], [14, 22, ""]]
         int HuntLevel = 0;
         string cluePath = "C:\\Users\\melin\\OneDrive\\Documents\\Projets\\Treasure Hunt Logs\\clues_full.json";
+        string SavePath = "";
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
         CluesList cl = new CluesList();
+        Hunt hunt = new Hunt();
+        int x;
+        int y;
 
         public class THStep
         {
@@ -27,11 +32,16 @@ namespace Treasure_Hunt_Logs
                 StepClue = stepClue;
             }
 
-            public int HuntLevel { get; set; }
             public int X_Coordinate { get; set; }
             public int Y_Coordinate { get; set; }
             public string StepClue { get; set; }
 
+        }
+
+        public class Hunt
+        {
+            public int HuntLevel { get; set; }
+            List<THStep> Steps { get; set; }
         }
 
         public class Clue
@@ -111,8 +121,62 @@ namespace Treasure_Hunt_Logs
                 var json = sr.ReadToEnd();
                 cl = JsonSerializer.Deserialize<CluesList>(json);
             }
-            
+
         }
 
+        private void button_NewHunt_Click(object sender, EventArgs e)
+        {
+            hunt.HuntLevel = HuntLevel;
+        }
+
+        private void button_DisplayCurrentHuntClick(object sender, EventArgs e)
+        {
+            CurrentHuntPreview chp = new CurrentHuntPreview();
+            chp.Show();
+        }
+
+        private void button_RedoHunt_Click(object sender, EventArgs e)
+        {
+            //Messagebox to show the last step and make sure they want it erased
+        }
+
+        private void button_SaveHunt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_XCoordinate_Leave(object sender, EventArgs e)
+        {
+            if (textBox_XCoordinate.Text != "")
+            {
+                try
+                {
+                    x = Int16.Parse(textBox_XCoordinate.Text);
+                }
+                catch (Exception ex)
+                {
+                    textBox_XCoordinate.Text = "";
+                    MessageBox.Show("Please enter a valid coordinate");
+                }
+            }
+
+        }
+
+        private void textBox_YCoordinate_Leave(object sender, EventArgs e)
+        {
+            if (textBox_YCoordinate.Text != "")
+            {
+                try
+                {
+                    y = Int16.Parse(textBox_XCoordinate.Text);
+                }
+                catch (Exception ex)
+                {
+                    textBox_YCoordinate.Text = "";
+                    MessageBox.Show("Please enter a valid coordinate");
+                }
+            }
+
+        }
     }
 }

@@ -39,8 +39,8 @@
             comboBox_Clues = new ComboBox();
             groupBox_Clue = new GroupBox();
             button_NewHunt = new Button();
-            button_NextSetClues = new Button();
-            button_EditHunt = new Button();
+            button_DisplayCurrentHunt = new Button();
+            button_EraseLastStep = new Button();
             button_SaveHunt = new Button();
             groupBox_Coordinates.SuspendLayout();
             groupBox_Clue.SuspendLayout();
@@ -112,6 +112,7 @@
             textBox_YCoordinate.Size = new Size(66, 23);
             textBox_YCoordinate.TabIndex = 1;
             textBox_YCoordinate.TextAlign = HorizontalAlignment.Center;
+            textBox_YCoordinate.Leave += textBox_YCoordinate_Leave;
             // 
             // textBox_XCoordinate
             // 
@@ -121,6 +122,7 @@
             textBox_XCoordinate.Size = new Size(67, 23);
             textBox_XCoordinate.TabIndex = 0;
             textBox_XCoordinate.TextAlign = HorizontalAlignment.Center;
+            textBox_XCoordinate.Leave += textBox_XCoordinate_Leave;
             // 
             // comboBox_Clues
             // 
@@ -149,24 +151,27 @@
             button_NewHunt.TabIndex = 8;
             button_NewHunt.Text = "New Hunt";
             button_NewHunt.UseVisualStyleBackColor = true;
+            button_NewHunt.Click += button_NewHunt_Click;
             // 
-            // button_NextSetClues
+            // button_DisplayCurrentHunt
             // 
-            button_NextSetClues.Location = new Point(121, 242);
-            button_NextSetClues.Name = "button_NextSetClues";
-            button_NextSetClues.Size = new Size(90, 40);
-            button_NextSetClues.TabIndex = 9;
-            button_NextSetClues.Text = "Next Set of Clues";
-            button_NextSetClues.UseVisualStyleBackColor = true;
+            button_DisplayCurrentHunt.Location = new Point(121, 242);
+            button_DisplayCurrentHunt.Name = "button_DisplayCurrentHunt";
+            button_DisplayCurrentHunt.Size = new Size(90, 40);
+            button_DisplayCurrentHunt.TabIndex = 9;
+            button_DisplayCurrentHunt.Text = "See current Hunt";
+            button_DisplayCurrentHunt.UseVisualStyleBackColor = true;
+            button_DisplayCurrentHunt.Click += button_DisplayCurrentHuntClick;
             // 
-            // button_EditHunt
+            // button_EraseLastStep
             // 
-            button_EditHunt.Location = new Point(227, 242);
-            button_EditHunt.Name = "button_EditHunt";
-            button_EditHunt.Size = new Size(90, 40);
-            button_EditHunt.TabIndex = 10;
-            button_EditHunt.Text = "Edit Hunt";
-            button_EditHunt.UseVisualStyleBackColor = true;
+            button_EraseLastStep.Location = new Point(227, 242);
+            button_EraseLastStep.Name = "button_EraseLastStep";
+            button_EraseLastStep.Size = new Size(90, 40);
+            button_EraseLastStep.TabIndex = 10;
+            button_EraseLastStep.Text = "Erase last Step";
+            button_EraseLastStep.UseVisualStyleBackColor = true;
+            button_EraseLastStep.Click += button_RedoHunt_Click;
             // 
             // button_SaveHunt
             // 
@@ -176,6 +181,7 @@
             button_SaveHunt.TabIndex = 11;
             button_SaveHunt.Text = "Save Hunt";
             button_SaveHunt.UseVisualStyleBackColor = true;
+            button_SaveHunt.Click += button_SaveHunt_Click;
             // 
             // THLogs
             // 
@@ -183,8 +189,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(436, 297);
             Controls.Add(button_SaveHunt);
-            Controls.Add(button_EditHunt);
-            Controls.Add(button_NextSetClues);
+            Controls.Add(button_EraseLastStep);
+            Controls.Add(button_DisplayCurrentHunt);
             Controls.Add(button_NewHunt);
             Controls.Add(groupBox_Clue);
             Controls.Add(groupBox_Coordinates);
@@ -193,6 +199,9 @@
             Controls.Add(comboBox_HuntLevel);
             Controls.Add(label_HuntLevel);
             Controls.Add(label_THLogger);
+            KeyPreview = true;
+            MaximumSize = new Size(452, 336);
+            MinimumSize = new Size(452, 336);
             Name = "THLogs";
             Text = "Treasure Hunt funsies";
             Load += THLogs_Load;
@@ -216,8 +225,8 @@
         private ComboBox comboBox_Clues;
         private GroupBox groupBox_Clue;
         private Button button_NewHunt;
-        private Button button_NextSetClues;
-        private Button button_EditHunt;
+        private Button button_DisplayCurrentHunt;
+        private Button button_EraseLastStep;
         private Button button_SaveHunt;
     }
 }
