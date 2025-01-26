@@ -265,7 +265,7 @@ namespace Treasure_Hunt_Logs
             {
                 try
                 {
-                    y = Int16.Parse(textBox_XCoordinate.Text);
+                    y = Int16.Parse(textBox_YCoordinate.Text);
                 }
                 catch (Exception ex)
                 {
