@@ -54,7 +54,7 @@
             label_THLogger.Location = new Point(125, 9);
             label_THLogger.Name = "label_THLogger";
             label_THLogger.Size = new Size(195, 25);
-            label_THLogger.TabIndex = 0;
+            label_THLogger.TabIndex = 14;
             label_THLogger.Text = "Treasure Hunt Logger";
             // 
             // label_HuntLevel
@@ -63,7 +63,7 @@
             label_HuntLevel.Location = new Point(12, 46);
             label_HuntLevel.Name = "label_HuntLevel";
             label_HuntLevel.Size = new Size(73, 15);
-            label_HuntLevel.TabIndex = 1;
+            label_HuntLevel.TabIndex = 13;
             label_HuntLevel.Text = "Hunt Level  :";
             // 
             // comboBox_HuntLevel
@@ -73,7 +73,7 @@
             comboBox_HuntLevel.Location = new Point(92, 43);
             comboBox_HuntLevel.Name = "comboBox_HuntLevel";
             comboBox_HuntLevel.Size = new Size(65, 23);
-            comboBox_HuntLevel.TabIndex = 3;
+            comboBox_HuntLevel.TabIndex = 12;
             comboBox_HuntLevel.SelectedIndexChanged += comboBox_HuntLevel_SelectedIndexChanged;
             // 
             // label_Language
@@ -82,7 +82,7 @@
             label_Language.Location = new Point(227, 46);
             label_Language.Name = "label_Language";
             label_Language.Size = new Size(65, 15);
-            label_Language.TabIndex = 5;
+            label_Language.TabIndex = 11;
             label_Language.Text = "Language :";
             // 
             // comboBox_Language
@@ -91,7 +91,7 @@
             comboBox_Language.Location = new Point(335, 43);
             comboBox_Language.Name = "comboBox_Language";
             comboBox_Language.Size = new Size(89, 23);
-            comboBox_Language.TabIndex = 6;
+            comboBox_Language.TabIndex = 10;
             comboBox_Language.SelectedIndexChanged += comboBox_Language_SelectedIndexChanged;
             // 
             // groupBox_Coordinates
@@ -101,7 +101,7 @@
             groupBox_Coordinates.Location = new Point(12, 79);
             groupBox_Coordinates.Name = "groupBox_Coordinates";
             groupBox_Coordinates.Size = new Size(118, 134);
-            groupBox_Coordinates.TabIndex = 7;
+            groupBox_Coordinates.TabIndex = 2;
             groupBox_Coordinates.TabStop = false;
             groupBox_Coordinates.Text = "Coordinates";
             // 
@@ -132,7 +132,7 @@
             comboBox_Clues.Location = new Point(21, 59);
             comboBox_Clues.Name = "comboBox_Clues";
             comboBox_Clues.Size = new Size(224, 23);
-            comboBox_Clues.TabIndex = 8;
+            comboBox_Clues.TabIndex = 4;
             comboBox_Clues.SelectedIndexChanged += comboBox_Clues_SelectedIndexChanged;
             // 
             // groupBox_Clue
@@ -142,7 +142,7 @@
             groupBox_Clue.Location = new Point(158, 79);
             groupBox_Clue.Name = "groupBox_Clue";
             groupBox_Clue.Size = new Size(266, 134);
-            groupBox_Clue.TabIndex = 2;
+            groupBox_Clue.TabIndex = 3;
             groupBox_Clue.TabStop = false;
             groupBox_Clue.Text = "Clue";
             // 
@@ -153,14 +153,14 @@
             label_Result.Location = new Point(21, 95);
             label_Result.Name = "label_Result";
             label_Result.Size = new Size(0, 15);
-            label_Result.TabIndex = 12;
+            label_Result.TabIndex = 7;
             // 
             // button_AddLastHint
             // 
             button_AddLastHint.Location = new Point(15, 242);
             button_AddLastHint.Name = "button_AddLastHint";
             button_AddLastHint.Size = new Size(90, 40);
-            button_AddLastHint.TabIndex = 8;
+            button_AddLastHint.TabIndex = 5;
             button_AddLastHint.Text = "Add Last Hint";
             button_AddLastHint.UseVisualStyleBackColor = true;
             button_AddLastHint.Click += button_AddLastHint_Click;
@@ -170,7 +170,7 @@
             button_DisplayCurrentHunt.Location = new Point(121, 242);
             button_DisplayCurrentHunt.Name = "button_DisplayCurrentHunt";
             button_DisplayCurrentHunt.Size = new Size(90, 40);
-            button_DisplayCurrentHunt.TabIndex = 9;
+            button_DisplayCurrentHunt.TabIndex = 6;
             button_DisplayCurrentHunt.Text = "See current Hunt";
             button_DisplayCurrentHunt.UseVisualStyleBackColor = true;
             button_DisplayCurrentHunt.Click += button_DisplayCurrentHuntClick;
@@ -180,7 +180,7 @@
             button_EraseLastStep.Location = new Point(227, 242);
             button_EraseLastStep.Name = "button_EraseLastStep";
             button_EraseLastStep.Size = new Size(90, 40);
-            button_EraseLastStep.TabIndex = 10;
+            button_EraseLastStep.TabIndex = 7;
             button_EraseLastStep.Text = "Erase last Step";
             button_EraseLastStep.UseVisualStyleBackColor = true;
             button_EraseLastStep.Click += button_RedoHunt_Click;
@@ -190,7 +190,7 @@
             button_SaveHunt.Location = new Point(334, 242);
             button_SaveHunt.Name = "button_SaveHunt";
             button_SaveHunt.Size = new Size(90, 40);
-            button_SaveHunt.TabIndex = 11;
+            button_SaveHunt.TabIndex = 8;
             button_SaveHunt.Text = "Save Hunt";
             button_SaveHunt.UseVisualStyleBackColor = true;
             button_SaveHunt.Click += button_SaveHunt_Click;
