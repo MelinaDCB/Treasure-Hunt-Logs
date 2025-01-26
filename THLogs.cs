@@ -10,7 +10,8 @@ namespace Treasure_Hunt_Logs
         {
             InitializeComponent();
         }
-        
+
+        public CurrentHuntPreview chp;
         int HuntLevel = 0;
         string cluePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "clues_full.json");
         string SavePath = string.Empty;
@@ -136,6 +137,7 @@ namespace Treasure_Hunt_Logs
             comboBox_Clues.Text == "")
             {
                 hunt.Steps.Add(AddStep(x, y, ""));
+                UpdateSecondForm();
                 label_Result.Text = "Last Clue added successfuly.";
                 CleanTextboxes();
                 await Task.Delay(1000);
@@ -145,14 +147,35 @@ namespace Treasure_Hunt_Logs
 
         private void button_DisplayCurrentHuntClick(object sender, EventArgs e)
         {
-            CurrentHuntPreview chp = new CurrentHuntPreview();
-            chp.CluesToShow = new List<string>();
-            foreach (THStep ths in hunt.Steps)
+            if (chp == null || chp.IsDisposed)
             {
-                string data = $"{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"";
-                chp.CluesToShow.Add(data);
+                chp = new CurrentHuntPreview();
+                chp.StartPosition = FormStartPosition.Manual;
+                Screen currentScreen = Screen.FromControl(this);
+
+                // Calculate the position for the second form
+                int newX = this.Location.X + this.Width + 10;
+                int newY = this.Location.Y;
+                Rectangle workingArea = currentScreen.WorkingArea;
+                if (newX + chp.Width > workingArea.Right)
+                {
+                    newX = workingArea.Right - chp.Width;
+                }
+                if (newY + chp.Height > workingArea.Bottom)
+                {
+                    newY = workingArea.Bottom - chp.Height;
+                }
+
+                chp.Location = new Point(newX, newY);
+                chp.CluesToShow = new List<string>();
+                foreach (THStep ths in hunt.Steps)
+                {
+                    string data = $"{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"";
+                    chp.CluesToShow.Add(data);
+                }
+                chp.Show();
             }
-            chp.ShowDialog();
+            
         }
 
         private void button_RedoHunt_Click(object sender, EventArgs e)
@@ -166,6 +189,7 @@ namespace Treasure_Hunt_Logs
                 if (dr == DialogResult.Yes)
                 {
                     hunt.Steps.RemoveAt(stepcount - 1);
+                    UpdateSecondForm();
                 }
             }
             else
@@ -174,7 +198,7 @@ namespace Treasure_Hunt_Logs
             }
         }
 
-        private void button_SaveHunt_Click(object sender, EventArgs e)
+        private async void button_SaveHunt_Click(object sender, EventArgs e)
         {
             if (!File.Exists(Path.Combine(Properties.Settings.Default.FolderPath, $"HuntLogs.json")))
             {
@@ -189,11 +213,15 @@ namespace Treasure_Hunt_Logs
                     }
                 }
                 CreateHunt(hunt);
+                label_Result.Text = "Hunt added successfuly.";
+                await Task.Delay(1000);
             }
             else
             {
                 SavePath = Path.Combine(Properties.Settings.Default.FolderPath, $"HuntLogs.json");
                 CreateHunt(hunt);
+                label_Result.Text = "Hunt added successfuly.";
+                await Task.Delay(1000);
             }
         }
 
@@ -212,6 +240,7 @@ namespace Treasure_Hunt_Logs
             string HuntToSave = $"[{hunt.HuntLevel}, {string.Join(", ", thslist)}],\n";
             File.AppendAllText(SavePath, HuntToSave);
             hunt.Steps.Clear();
+            ClearSecondForm();
         }
 
         private void textBox_XCoordinate_Leave(object sender, EventArgs e)
@@ -256,6 +285,7 @@ namespace Treasure_Hunt_Logs
                 try
                 {
                     hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
+                    UpdateSecondForm();
                     label_Result.Text = "Clue added successfuly.";
                     await Task.Delay(1000);
                     CleanTextboxes();
@@ -270,6 +300,7 @@ namespace Treasure_Hunt_Logs
                         hunt = new Hunt(HuntLevel, ListSteps);
                         hunt.HuntLevel = HuntLevel;
                         hunt.Steps.Add(AddStep(x, y, comboBox_Clues.Text));
+                        UpdateSecondForm();
                         label_Result.Text = "Clue added successfuly.";
                         await Task.Delay(1000);
                         CleanTextboxes();
@@ -290,6 +321,28 @@ namespace Treasure_Hunt_Logs
             textBox_XCoordinate.Clear();
             textBox_YCoordinate.Clear();
             comboBox_Clues.SelectedIndex = -1;
+        }
+
+        private void UpdateSecondForm()
+        {
+            if (chp != null && !chp.IsDisposed)
+            {
+                chp.CluesToShow.Clear();
+                foreach (THStep ths in hunt.Steps)
+                {
+                    string data = $"{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"";
+                    chp.CluesToShow.Add(data);
+                }
+                chp.UpdateDisplay();
+            }
+        }
+
+        private void ClearSecondForm()
+        {
+            if (chp != null && !chp.IsDisposed)
+            {
+                chp.NewHunt();
+            }
         }
     }
 }
