@@ -113,6 +113,7 @@
             textBox_YCoordinate.Size = new Size(66, 23);
             textBox_YCoordinate.TabIndex = 1;
             textBox_YCoordinate.TextAlign = HorizontalAlignment.Center;
+            textBox_YCoordinate.KeyDown += textBox_YCoordinate_KeyDown;
             textBox_YCoordinate.Leave += textBox_YCoordinate_Leave;
             // 
             // textBox_XCoordinate

@@ -363,7 +363,27 @@ namespace Treasure_Hunt_Logs
                     string x_c = clipboardText.Split(' ')[1];
                     string y_c = clipboardText.Split(' ')[2];
 
-                    // Assign text to textboxes
+                    textBox_XCoordinate.Text = x_c;
+                    textBox_YCoordinate.Text = y_c;
+                    x = Int16.Parse(x_c);
+                    y = Int16.Parse(y_c);
+                    comboBox_Clues.Focus();
+                }
+            }
+        }
+
+        private void textBox_YCoordinate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                e.SuppressKeyPress = true;
+                string clipboardText = Clipboard.GetText();
+
+                if (!string.IsNullOrEmpty(clipboardText))
+                {
+                    string x_c = clipboardText.Split(' ')[1];
+                    string y_c = clipboardText.Split(' ')[2];
+
                     textBox_XCoordinate.Text = x_c;
                     textBox_YCoordinate.Text = y_c;
                     x = Int16.Parse(x_c);
