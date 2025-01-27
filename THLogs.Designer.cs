@@ -110,10 +110,8 @@
             textBox_YCoordinate.Location = new Point(27, 92);
             textBox_YCoordinate.Name = "textBox_YCoordinate";
             textBox_YCoordinate.PlaceholderText = "Y";
-            textBox_YCoordinate.ReadOnly = true;
             textBox_YCoordinate.Size = new Size(66, 23);
             textBox_YCoordinate.TabIndex = 1;
-            textBox_YCoordinate.TabStop = false;
             textBox_YCoordinate.TextAlign = HorizontalAlignment.Center;
             textBox_YCoordinate.Leave += textBox_YCoordinate_Leave;
             // 

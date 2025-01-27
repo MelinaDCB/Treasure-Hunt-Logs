@@ -360,12 +360,15 @@ namespace Treasure_Hunt_Logs
 
                 if (!string.IsNullOrEmpty(clipboardText))
                 {
-                    string x = clipboardText.Split(' ')[1];
-                    string y = clipboardText.Split(' ')[2];
+                    string x_c = clipboardText.Split(' ')[1];
+                    string y_c = clipboardText.Split(' ')[2];
 
                     // Assign text to textboxes
-                    textBox_XCoordinate.Text = x;
-                    textBox_YCoordinate.Text = y;
+                    textBox_XCoordinate.Text = x_c;
+                    textBox_YCoordinate.Text = y_c;
+                    x = Int16.Parse(x_c);
+                    y = Int16.Parse(y_c);
+                    comboBox_Clues.Focus();
                 }
             }
         }
