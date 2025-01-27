@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Treasure_Hunt_Logs
 {
@@ -143,7 +144,7 @@ namespace Treasure_Hunt_Logs
             {
                 hunt.Steps.Add(AddStep(x, y, ""));
                 UpdateSecondForm();
-                label_Result.Text = "Last Clue added successfuly.";
+                label_Result.Text = "First Clue added successfuly, happy hunting !";
                 CleanTextboxes();
                 await Task.Delay(1000);
                 label_Result.Text = "";
@@ -180,7 +181,7 @@ namespace Treasure_Hunt_Logs
                 }
                 chp.Show();
             }
-            
+
         }
 
         private void button_RedoHunt_Click(object sender, EventArgs e)
@@ -347,6 +348,25 @@ namespace Treasure_Hunt_Logs
             if (chp != null && !chp.IsDisposed)
             {
                 chp.NewHunt();
+            }
+        }
+
+        private void textBox_XCoordinate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                e.SuppressKeyPress = true;
+                string clipboardText = Clipboard.GetText();
+
+                if (!string.IsNullOrEmpty(clipboardText))
+                {
+                    string x = clipboardText.Split(' ')[1];
+                    string y = clipboardText.Split(' ')[2];
+
+                    // Assign text to textboxes
+                    textBox_XCoordinate.Text = x;
+                    textBox_YCoordinate.Text = y;
+                }
             }
         }
     }

@@ -113,6 +113,7 @@
             textBox_YCoordinate.ReadOnly = true;
             textBox_YCoordinate.Size = new Size(66, 23);
             textBox_YCoordinate.TabIndex = 1;
+            textBox_YCoordinate.TabStop = false;
             textBox_YCoordinate.TextAlign = HorizontalAlignment.Center;
             textBox_YCoordinate.Leave += textBox_YCoordinate_Leave;
             // 
@@ -124,6 +125,7 @@
             textBox_XCoordinate.Size = new Size(67, 23);
             textBox_XCoordinate.TabIndex = 0;
             textBox_XCoordinate.TextAlign = HorizontalAlignment.Center;
+            textBox_XCoordinate.KeyDown += textBox_XCoordinate_KeyDown;
             textBox_XCoordinate.Leave += textBox_XCoordinate_Leave;
             // 
             // comboBox_Clues
@@ -162,7 +164,7 @@
             button_AddLastHint.Name = "button_AddLastHint";
             button_AddLastHint.Size = new Size(90, 40);
             button_AddLastHint.TabIndex = 5;
-            button_AddLastHint.Text = "Add Last Hint";
+            button_AddLastHint.Text = "Add First Hint";
             button_AddLastHint.UseVisualStyleBackColor = true;
             button_AddLastHint.Click += button_AddLastHint_Click;
             // 
