@@ -34,5 +34,29 @@ namespace Treasure_Hunt_Logs.Properties {
                 this["FolderPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("120")]
+        public int Level {
+            get {
+                return ((int)(this["Level"]));
+            }
+            set {
+                this["Level"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Language {
+            get {
+                return ((string)(this["Language"]));
+            }
+            set {
+                this["Language"] = value;
+            }
+        }
     }
 }

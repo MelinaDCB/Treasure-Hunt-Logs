@@ -12,9 +12,10 @@ namespace Treasure_Hunt_Logs
         }
 
         public CurrentHuntPreview chp;
-        int HuntLevel = 0;
+        int HuntLevel = Properties.Settings.Default.Level;
         string cluePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "clues_full.json");
         string SavePath = string.Empty;
+        string language = Properties.Settings.Default.Language;
         List<string> Languages = ["Français", "English", "Español", "Deutsch", "Portugués"];
         CluesList cl = new CluesList();
         List<THStep> ListSteps = new List<THStep>();
@@ -103,19 +104,23 @@ namespace Treasure_Hunt_Logs
             {
                 comboBox_Clues.Items.Clear();
             }
+            Properties.Settings.Default.Language = selectedLanguage;
+            Properties.Settings.Default.Save();
         }
 
         private void comboBox_HuntLevel_SelectedIndexChanged(object sender, EventArgs e)
         {
             HuntLevel = Int32.Parse(comboBox_HuntLevel.Text);
+            Properties.Settings.Default.Level = HuntLevel;
+            Properties.Settings.Default.Save();
         }
 
         private void THLogs_Load(object sender, EventArgs e)
         {
             ClueComboBoxLoad();
             comboBox_Language.DataSource = Languages;
-            comboBox_HuntLevel.SelectedIndex = 5;
-            comboBox_Language.Text = "";
+            comboBox_Language.Text = language;
+            comboBox_HuntLevel.Text = HuntLevel.ToString();
             comboBox_Clues.Text = "";
             hunt = new Hunt(HuntLevel, ListSteps);
             hunt.HuntLevel = HuntLevel;
