@@ -530,8 +530,16 @@
     },
     {
       "clue-id": 914,
-      "name-fr": "Phorreur",
-      "name-en": "Drheller",
+      "name-fr": "Phorreur baveux",
+      "name-en": "Drooling Drheller",
+      "name-es": "Perforatroz",
+      "name-de": "Griesgräber",
+      "name-pt": "Perfuratroz"
+    },
+    {
+      "clue-id": 915,
+      "name-fr": "Phorreur chafouin ",
+      "name-en": "Cunning Drheller",
       "name-es": "Perforatroz",
       "name-de": "Griesgräber",
       "name-pt": "Perfuratroz"
@@ -767,6 +775,14 @@
       "name-es": "Grabado de patita",
       "name-de": "Pf\u00F6tchen-Gravur",
       "name-pt": "Gravura de Patinha"
+    },
+    {
+      "clue-id": 945,
+      "name-fr": "Phorreur sournois",
+      "name-en": "Sneaky Drheller",
+      "name-es": "Perforatroz",
+      "name-de": "Griesgräber",
+      "name-pt": "Perfuratroz"
     },
     {
       "clue-id": 946,
@@ -1103,6 +1119,14 @@
       "name-es": "Cartel de huesito",
       "name-de": "Kn\u00F6chelchen-Schild",
       "name-pt": "Placa de Ossinho"
+    },
+    {
+      "clue-id": 988,
+      "name-fr": "Phorreur fourbe",
+      "name-en": "Cheating Drheller",
+      "name-es": "Perforatroz",
+      "name-de": "Griesgräber",
+      "name-pt": "Perfuratroz"
     },
     {
       "clue-id": 989,
