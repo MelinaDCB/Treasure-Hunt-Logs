@@ -243,7 +243,7 @@ namespace Treasure_Hunt_Logs
                 string data = $"[{ths.X_Coordinate.ToString()}, {ths.Y_Coordinate.ToString()}, \"{ths.StepClue}\"]";
                 thslist.Add(data);
             }
-            string HuntToSave = $"[{hunt.HuntLevel}, {string.Join(", ", thslist)}],\n";
+            string HuntToSave = $"[{comboBox_HuntLevel.Text}, {string.Join(", ", thslist)}],\n";
             File.AppendAllText(SavePath, HuntToSave);
             hunt.Steps.Clear();
             ClearSecondForm();
